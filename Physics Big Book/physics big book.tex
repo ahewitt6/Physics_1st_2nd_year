@@ -1,0 +1,2550 @@
+\documentclass[12pt]{amsart}
+
+\usepackage{enumerate,amsmath,amssymb,amsthm}
+
+\usepackage{arydshln}
+\usepackage{dashrule}
+\usepackage{esint}
+
+
+%for Griffiths curly r
+\usepackage{calligra}
+\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n}
+\DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}{}
+\newcommand{\scripty}[1]{\ensuremath{\mathcalligra{#1}}}
+
+\newcommand{\capk}{\frac{1}{4 \pi \epsilon_0}}
+
+\begin{document}
+\title{\underline{Physics big book derivations}}
+\author{Alec Hewitt}
+\maketitle
+
+
+
+
+\setlength{\parindent}{0mm}
+
+\begin{enumerate}
+\setcounter{enumi}{583}
+
+
+
+\item \underline{$s_f = s_i + v \Delta t$}\\
+$v_{avg} = \frac{\Delta s}{\Delta t} = \frac{s_f - s_i}{\Delta t} \implies s_f=s_i + v_{avg} t$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{ $v_f = v_i + a_{avg} \Delta t$}\\
+$a=\frac{\Delta v}{\Delta t} = \frac{v_f - v_i}{\Delta t} \implies v_f = v_i + a \Delta t$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$s_f = s_i + \int_{t_i}^{t_f} v dt$}\\
+$v=\frac{ds}{dt} = \lim_{\Delta t \rightarrow 0} \frac{\Delta s}{\Delta t} \implies v dt = ds \implies \int_{t_i}^{t_f} v dt = \int_{s_i}^{s_f} ds = \Delta s \implies s_f =s_i + \int_{t_i}^{t_f} v dt$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$v_f=v_i + \int_{t_i}^{t_f} a dt$}\\
+$a=\frac{dv}{dt}=\lim_{\Delta \rightarrow 0} \frac{ \Delta}{\Delta t} \implies a dt = dv \implies \int_{t_i}^{t_f} a dt = \int_{v_i}^{v_f }dv \implies v_f= v_i + \int_{t_i}^{t_f} a dt$\\
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{ $\Delta s = v_i \Delta t + \frac{1}{2} a \Delta t^2$}\\
+$v_{avg} \Delta t = ( \frac{v_f+v_i}{2}) \Delta t = \Delta s \implies (\frac{v_i + a \Delta t + v_i}{2}) \Delta t = \Delta s \implies \Delta s = v_i \Delta t + \frac{1}{2} a \Delta t^2\\
+\therefore v_f= v_i + a \Delta t$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$v_f^2 = v_i^2 + 2 a \Delta s$}\\
+$v_{avg} \Delta t  = (\frac{v_f+ v_i}{2}) \Delta t \implies \frac{v_f^2 - v_i ^2 }{2a} = \Delta s \implies v_f^2 = 2a \Delta s + v_i^2\\
+a=\frac{\Delta v}{\Delta t} = \frac{v_f - v_i}{\Delta t} \implies \Delta t = \frac{v_f-v_i}{a}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$range= \frac{v_0^2 sin(2 \theta)}{g}$} we should redo this one\\
+\underline{given}\\
+\underline{x}\\
+$\theta=30^{\circ}\\
+a_x=0\\
+v_{ix} = v_i cos \theta\\
+\Delta x = ?
+v_{fx} = v_i cos \theta $\\
+
+
+
+\underline{Note:} $\vec{r}_{AB}$ means "A relative to B"\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{v}_{CB}=\vec{v}_{CA} + \vec{v}_{AB}$}\\
+$\vec{r}_{AB} + \vec{r}_{CB} = \vec{r}_{CB}\\
+\implies \frac{d \vec{r}_{AB}}{dt} + \frac{d \vec{r}_{CA}}{dt} = \frac{d \vec{r}_{CB}}{dt}\\
+\implies \vec{v}_{AB} + \vec{v}_{CA}=\vec{v}_{CB}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{ $v= \frac{2 \pi r}{T}$ ~(uniform circular motion)}\\
+$\theta = \frac{s}{r}\\
+\omega = \lim_{\Delta t \rightarrow 0} \frac{\Delta \theta}{\Delta t} = \frac{ d \theta}{dt} $
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$ |\omega| = \frac{2 \pi}{T}$}\\
+$v= \frac{ds}{dt} = \frac{r d \theta}{dt} using ds=r d \theta\\
+\implies v = \omega r\\
+\therefore \frac{2 \pi r}{T} = \omega r \implies \frac{2 \pi}{T} = \omega$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$v_t=\omega r$}\\
+$v= \frac{ds}{dt}= \frac{r d \theta}{dt}=r \frac{d \theta}{dt} = r \omega\\
+\therefore v= \omega r\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$a_c=a_r = \frac{v^2}{r}$}\\
+$a_r= \frac{dv}{dt} = \frac{\frac{v d \theta}{r d \theta}}{v}=\frac{v^2}{r}$\\
+\underline{Alternate Method:}\\
+$\vec{r}(t) = \langle r cos(\theta(t)),r sin(\theta(t)) \rangle\\
+\vec{r}'(t)=\langle -r \frac{d \theta}{dt} sin(\theta(t)), r \frac{d \theta}{dt cos(\theta(t))}= r \omega \langle -sin(\theta(t)), \cos(\theta(t)) \rangle\\
+\therefore | \frac{d^2 \vec{r}}{dt^2}|= a_c = | \vec{a}|=r \omega^2 = r(\frac{v}{r})^2=\frac{v^2}{r}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$v=\sqrt{\frac{2mg}{c \rho A}}$} (Terminal Velocity)
+$\frac{1}{2} C \rho A v^2 = mg \implies v= \sqrt{\frac{2mg}{C \rho A}}$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Note:} The static frictional force opposes forces until the "breaking point"
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$v_{orbit} = \sqrt{rg}$}\\
+$\frac{GMm}{r^2} = m \frac{v^2}{r}\\
+\implies \frac{GM}{r}=v^2\\
+\therefore v= \sqrt{\frac{GM}{r}} = \sqrt{rg}$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$T=\frac{2 \pi r}{v_{orb}}=2 \pi \sqrt{\frac{r}{g}} = 2 \pi \sqrt{\frac{r^3}{GM}}$} (period of orbit)\\
+$v=\frac{2 \pi r}{T} = \sqrt{\frac{GM}{r}}\\
+\implies T= \frac{2 \pi r}{v)_{orb}}=2 \pi r \sqrt{\frac{r}{GM}} = \frac{2 \pi r}{\sqrt{rg}}\\
+\therefore T= 2 \pi \sqrt{ \frac{r^3}{ GM}}=2 \pi \sqrt{\frac{r}{g}} = \frac{2 \pi r}{v_{orb}}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$v_{crit} = \sqrt{rg}$}\\
+$F_g=F_{cent}\\
+mg= \frac{mv^2}{r} \implies g= \frac{v^2}{r} \implies v=\sqrt{rg}\\$
+\underline{Note:} There is no normal force at the top\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+ \item \underline{$r d \theta = ds$}\\
+$\theta \equiv \frac{s}{r}\\
+\implies \theta r = s \\
+\implies d( \theta r) = ds\\
+\therefore r d \theta = ds\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\int F ds = \Delta K = W$}\\
+$F= m \frac{dv}{dt}\\
+\frac{dv}{dt}=\frac{ds}{dt} \frac{dv}{ds}\\
+F=m \frac{ds}{dt} \frac{dv}{ds} = mv \frac{dv}{ds}\\
+\implies \int_{s_i}^{s_f} F ds = \int_{v_i}^{v_f} m v dv\\
+\implies F \Delta s = ( \frac{1}{2} m v^2 ]_{v_i}^{v_f} = \frac{1}{2} m v_f^2 - \frac{1}{2} m v_i^2 = \Delta K\\
+\therefore W= \Delta K\\
+\sum_i^{N} \Delta K_i = \Delta K_{tot} = W_{tot} = \sum_i^N W_i\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$K = \frac{1}{2} m v^2$}\\
+$mv dv = F ds\\
+\int mv dv = \int F ds\\
+\implies$ new quantity$ \sim K=\frac{1}{2} m v^2\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\Delta U= -(W_A + W_B) - W_{int}$ (232)\\
+\underline{Note:} $W_A$ is the work done on $A$ by $\vec{F}_{B on A}\\$
+also recall $\Delta U_{sp }= \frac{1}{2} k ( \Delta s_f)^2 - \frac{1}{2} k ( \Delta s_i)^2$\\
+\underline{recall:} conservation of energy $E_{sys} = E_{mech} + E_{th} = (K + U) + E_{th} \implies \Delta K + \Delta U + \Delta E_{th} = 0 ;\,\,$ for isolated system $\implies E_{sys} = 0\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$W=-\frac{k}{2}(\Delta s_f^2 - \Delta s_i^2)$}\\
+$W=\int_{s_i}^{s_f} (F_{sp})_s ds = - k \int_{s_i}^{s_f} (s-s_{eq}) ds\\
+U=s-s_{eq}\,\,$ \underline{Note:} $s_{eq}$ is const.\\
+$dU=ds,\,\, \Delta s_f=s_f - s_{eq},\,\, \Delta s_i = s_i - s_{eq}\\
+W=-k \int_{\Delta s_i}^{\Delta s_f} U dU = -k(\frac{1}{2} U^2 ]_{\Delta s_i}^{\Delta s_f}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$p=\vec{F} \cdot \vec{v}$} (power)\\
+$p=\frac{d E_{sys}}{dt} = \frac{d W}{d t},\,\,$ where $E_{sys} = W$\\
+$d W = \vec{F} \cdot d \vec{r}\\$
+const. $F$\\
+$\frac{dW}{d t} \vec{F} \cdot \frac{d \vec{r}}{d t} = \vec{F} \cdot \vec{v}\\
+\therefore p=\frac{d E}{d t} = \frac{d W}{d t} = \vec{F} \cdot \vec{v}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Note:} $\Delta U= -W_{int}$\\
+if you gain potential energy then you slow down since your $\Delta K$ is negative and no external work is applied.\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{F}=\frac{d \vec{p}}{d t}$}\\
+$\vec{F} = m \frac{d \vec{v}}{dt} = \frac{d(m\vec{v})}{dt} = \frac{d \vec{p}}{d t}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Note: Analogy with energy principle}\\
+$\Delta K = W = \int_{s_i}^{s_f} F ds\\
+\Delta p = J = \int_{t_i}^{t_f} F dt\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item\item \underline{$v_{f2}=\frac{2 v_{i1} m_1}{m_2 + m_1}$} \underline{collisions} $\sim$ elastic
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$v_{f1}=\frac{m_2-m_1}{m_2+m_1} v_{i1}$}\\
+$v_{f2}=\frac{2 m_1}{m_1+m_2} v_{i1}\\$
+using $p_i = p_f solve for v_{f1}\\
+v_{f1}=v_{i1}-\frac{m_2}{m_1} v_{f2}\\
+\implies v_{f1}=v_{i1} - \frac{m_2}{m_1} ( \frac{2 m_1}{m_1 + m_2} v_{i1})\\
+\implies v_{f1}=v_{i1}-\frac{2 m_1 m_2 v_{i1}}{(m_1 + m_2) m_1}\\
+\implies v_{f1}=\frac{v_i m_1(m_1+m_2) - 2 m_1 m_2 v_{i1}}{m_1 (m_1 + m_2)}\\
+\implies v_{f1} = \frac{v_{i1} ( m_1+ m_2) -2 m_2 v_{i1}}{m_1+m_2}\\
+\implies v_{f1}=\frac{m_1 v_{i1} + m_2 v_{i1} - 2 m_2 v_{i1}}{m_2+m_1} \implies \frac{m_1-m_2}{m_1+m_2} v_{i1} = v_{f1}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\frac{d\vec{p}}{dt}=m_{tot} \ddot{\vec{r}}_{cm} = \sum_k \vec{F}_{ext on k} = \vec{F}_{net}$}\\
+$\vec{p}=\sum_{k=1}^N \vec{p}_k\\
+\frac{d \vec{p}}{dt} = \sum_k \frac{d \vec{p}_k}{dt} = \sum_k \vec{F}_k\\
+\vec{F}_k = \sum_{j \neq k} \vec{F}_{j on k} + \vec{F}_{ext on k}\\
+\frac{d \vec{p}}{dt} = \sum_k \sum_{j \neq k} \vec{F}_{j on k} + \sum_k \vec{F}_{ext on k}\\
+\vec{F}_{k on j} = - \vec{F}_{j on k} \implies \vec{F}_{k on j} + \vec{F}_{j on k} = \vec{0}\\
+\therefore \frac{d \vec{p}}{dt} = \sum_k \vec{F}_{ext on k} = \vec{F}_{net}\\
+\therefore \frac{d \vec{p}}{dt} = \vec{0}$ ( isolated system)\\
+$\implies \vec{p}_f=\vec{p}_i$
+
+\underline{Note:} $\sum_k \sum_{j \neq k} \vec{F}_{j on k} = (\sum_{k \neq j} \sum_{j \neq k} \vec{F}_{j on k} + \sum_{k \neq j} \sum_{j \neq k} F_{j on k})\frac{1}{2};\,\, j \rightarrow k,\,\, k \rightarrow j\\
+=(\sum_{k \neq j} \sum_{j \neq k} \vec{F}_{j on k} + \sum_{j \neq k} \sum_{k \neq j} \vec{F}_{k on j}) \frac{1}{2};\,\, \vec{F}_{k on j}=-\vec{F}_{j on k}\\
+\implies \sum_{k \neq j} \sum_{j \neq k} \vec{F}_{j on k} - \sum_{k \neq j} \sum_{j \neq k} \vec{F}_{j on k}=0\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{chapter 12 formulas}\\
+$x_{cm} = \frac{1}{M} \sum_{i=1}^N m_i x_i \approx \frac{1}{M} \int x dm;\,\, \lambda = \frac{m}{L};\,\, \eta=\frac{m}{A};\,\, \rho=\frac{m}{V}\\
+y_{cm}=\frac{1}{M} \sum_{i=1}^N m_i y_i \approx \frac{1}{M} \int y dm;\,\, \lambda dx = dm;\,\, \eta dA = dm;\,\, \rho dV = dm\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\frac{1}{M} \sum_i m_i x_i = x_{cm}$} (center of mass)\\
+$T_i = m_i a_i = m_i \omega^2 r_i\\
+a_i = \frac{v^2}{r} = \omega^2 r_i\\
+v= \frac{ds}{dt} r \frac{d \theta}{dt} = r \omega\\
+a_i = \frac{v_i^2}{ r_i} = \omega^2 r_i\\
+(T_i)_x=m_i a_i \cos \theta_i;\,\, \cos \theta_i=\frac{x_{cm}-x_i}{r_i}\\
+\sum_i (T_i)_x = \sum_i m_i \omega^2 r_i \frac{x_{cm}-x_i}{r_i}\\
+((T_i)_x)_{net}=0 \implies \omega^2 ( \sum_i m_i x_{cm} - \sum_i m_i x_i)=0\\
+\implies x_{cm} ( \sum_i m_i )= \sum_i m_i x_i\\
+\therefore x_{cm} = \frac{1}{M} \sum_i m_i x_i$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$K_{rot}=\frac{1}{2} I \omega^2$}\\
+$K_{rot}=\sum_i \frac{1}{2} m_i v_i^2 = \sum_i \frac{1}{2}m_i \omega^2 r_i^2 = \frac{1}{2} ( \sum_i m_i r_i^2) \omega^2 = \frac{1}{2} I \omega^2\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Note:} (1) $U_G + K_{rot} = mg y_{cm} + \frac{1}{2} I \omega^2\\$
+(2) $I = \lim_{\Delta m \rightarrow 0} \sum_i r_i^2 \Delta m = \int r^2 dm;\,\, I_{object} = \sum_i I_i\\$
+(3) rotation about z-axis $I=\int (x^2 + y^2) dm$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$I= I_{cm} + M d^2$} (parallel axis theorem)\\
+$I=\int x^2 dm;\,\, x=x'+d\\
+\implies I = \int (x' + d)^2 dm=\int (x')^2 dm + \int 2 x' d dm + \int d^2 dm\\
+\underline{Note:} \int 2 x' d dm = 2 d \int x' dm = (2d/m) x'_{cm}=0\\
+\implies I=\int (x')^2 dm + \int d^2 dm\\
+\therefore I= I_{cm} + M d^2\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$|\vec{L}|=|\vec{r} \times \vec{p}|=mrv sin \theta$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\frac{d \vec{L}}{dt} = \vec{r} \times \vec{F}_{net} = \tau_{net} = \sum_i \frac{d \vec{L}_i}{dt} = \sum_i \vec{\tau}_i$}\\
+$\frac{d \vec{L}}{dt}=\frac{d(\vec{r} \times \vec{p})}{dt}= \frac{d \vec{r}}{dt} \times \vec{p} + \vec{r} \times \frac{d \vec{p}}{dt} = \vec{v} \times \vec{p} + \vec{r} \times \vec{F}_{net}\\
+\vec{v} \times \vec{p}=0\\
+\therefore \frac{d \vec{L}}{dt}=\vec{r} \times \vec{F}_{net} = \vec{\tau}_{net}\\
+\underline{Note:} \vec{L}=\sum_i \vec{L}_i$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Note:} $W=\int_{\infty}^r \vec{F} \cdot d \vec{r} = \int_{\infty}^r (-|\vec{F}| \hat{e}_r) \cdot ( dr \hat{e}_r = \int_r^{\infty} ( -| \vec{F}| \hat{e}_r) \cdot ( - dr \hat{e}_r)$ (use either the bounds of the integral to specify direction, not both\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\tau_{grav} = - m g x_{cm}$}\\
+$\tau_i = -x_i m_i g -(m_i x_i)g\\
+\tau_{grav}=\sum_i \tau_i = -(\sum_4i m_i x_i) g\\
+\therefore \tau_{grav} = -Mg x_{cm}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\Omega=\frac{Mgd}{I \omega}$}\\
+$\vec{\tau}=\vec{r} \times \vec{F}_G=Mgd \hat{i};\,\, \Omega = \frac{d \phi}{dt}\\
+\implies \Omega = \frac{\frac{dL}{L}}{dt}=\frac{\frac{dL}{dt}}{L},\,\, |\vec{\tau}|=Mgd;\,\, \tan d\phi = \frac{dL}{L};\,\, \tan d\phi \approx d \phi\\
+\therefore \Omega=\frac{Mgd}{I \omega}$
+there is a rotating wheel attached, imagine the bicycle wheel attached to a horizontal pole, x axis is aligned with the net torque.
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+The key point is it gains angular momentum in the direction of torque and therefore does not fall because it doesn't gain downward angular momentum.
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\tau_{net} = \alpha I$}\\
+\underline{Note:} $(a_i)_t \neq \frac{v^2}{r};\,\, (a_i)_t=a_i \sin \theta_i\\
+\tau_{net}=\sum_i \tau_i\\
+\implies (F_i)_t = m_i ( a_i )_t = m_i (a_i)_t = m_i r_i \alpha\\
+\implies r_i ( F_i )_t = m_i r_i^2 \alpha\\
+\therefore \sum_i \tau_i = (\sum_i m_i r_i^2 ) \alpha = I \alpha = \tau_{net}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$v_{cm} = R \omega$}\\
+$\Delta x_{cm} = 2 \pi R = v_{cm} T\\
+\implies \frac{2 \pi R}{T} = v_{cm} = \omega R\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{L} = I \vec{\omega}$} ( rotation about a fixed axle)\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$U_g = -\frac{GMm}{r}$} can be done by calculating the work done BY gravity\\
+$F=-\frac{dU}{ds}\\
+\implies -F ds = d U \implies - \int_{r}^{\infty} F dr = \Delta U\\
+\implies - \int_r^{\infty} \frac{GMm}{r^2} dr = ( \frac{GMm}{r}|_r^{\infty} = 0 - \frac{GMm}{r}\\
+\therefore U= - \frac{GMm}{r}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+\item \underline{$v_{esc} = \sqrt{\frac{2 G M_e}{R_e}}$} (escape velocity)\\
+$U_i + K_i = U_f + K_f\\
+\implies U_i + K_i = 0\\
+\therefore -\frac{GMm}{R_e} + \frac{1}{2} m v^2 =0\\
+\implies \frac{GM}{R_e}=\frac{1}{2} v^2\\
+\therefore v= \sqrt{\frac{2 G M}{R_e}}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$T^2 = (\frac{4 \pi^2}{GM})r^3 $} (Keplers third Law)\\
+$v_{orbit}=v_{circle}\\
+\implies \sqrt{\frac{GM}{r}} = \frac{2 \pi r}{T}\\
+\implies \frac{T}{2 \pi r}=\sqrt{\frac{r}{GM}}\\
+\therefore T^2 = \frac{4 \pi^2 r^3}{GM}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+line perpendicular to the line of action is the moment arm.
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$r_{geo} = ( \frac{GM}{4 \pi^2} T^2)^{1/3}$} (Geosynchronous orbit)\\
+$T^2 = \frac{4 \pi^2 r^3}{GM} (Kepler's Law)\\
+\therefore r= (\frac{GM}{4 \pi^2} T^2)^{1/3},\,\, T=24$ hrs\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$p=p_0 + \rho g d$}\\
+$p A = p_0 A + ma\\
+a=g\\
+\rho = \frac{m}{V}\\
+V=Ad\\
+\rho d A = m\\
+F= \rho g dA\\
+\implies pA= p_0 A + \rho g d A\\
+\therefore p=p_0 + \rho g d\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+A fluid exerts an upward buoyant force on an object in a fluid. The magnitude of the buoyant force is equal to the weight of the displaced fluid, mathematically this means $F_{B} = \rho_f V_f g\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$V1=V2$}\\
+$m_1=m_2\\
+\rho A_1 d_1 = \rho A_2 d_2\\
+\implies A_1 d_1 = A_2 d_2
+\therefore V_1 = V_2\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\underline{Random Notes:} $\frac{F_1}{A_1}=\frac{F_2}{A_2} \implies P_1=P_2;\,\, F = k \Delta L \implies \frac{F}{A} = p = - \beta \frac{\Delta V}{V};\,\, \frac{F}{A} = Y \frac{\Delta L}{L}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{equation of continuity: } $v_1 A_1 = v_2 A_2\\$
+\underline{Vol. flow rate: } $Q=v A = \frac{vol}{time}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Aside:} $E_i=E_f \implies \frac{1}{2} m v_i^2 + U_{Gi} = \frac{1}{2} m v_f^2 + U_{Gf} + W_{ext}\\
+\implies \Delta K + \Delta U = W_{ext}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$P_1 + \frac{1}{2} \rho v_1^2 + \rho g y_1 = P_2 + \frac{1}{2} \rho v_2^2 + \rho g y_2$} (Bernoulli's Equation)\\
+$\Delta K + \Delta U = W_{ext}\\
+W_1 = \vec{F}_1 \cdot \Delta \vec{r}_1 = F_1 \Delta x_1 = (P_1 A_1) \Delta x_1\\
+= (A_1 \Delta x_1) P_1 = P_1 V\\
+W_2 = \vec{F}_2 \cdot \Delta \vec{r}_2 = - F_2 \Delta x_2 = -(P_2 A_2) \Delta x_2 = - P_2 V\\
+W_{ext} = P_1 V - P_2 V = (P_1 - P_2) V\\
+\Delta U_g = m g y_2 - m g y_1 = \rho V y_2 - \rho V y_1\\
+\Delta K = \frac{1}{2} m v_2^2 - \frac{1}{2} m v_1^2 = \frac{1}{2} \rho V v_2^2 - \frac{1}{2} \rho V v_1^2\\
+\implies \frac{1}{2} \rho V v_2^2 - \frac{1}{2} \rho V v_1^2 + \rho V y_2 - \rho V y_1 = P_1 V - P_2 V\\
+\therefore P_1 + \frac{1}{2} \rho v_1^2 + \rho g y_1 = P_2 + \frac{1}{2} \rho v_2^2 + \rho g y_2$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\omega=2 \pi f$}\\
+$v=\frac{ds}{dt}=r \frac{d \theta}{dt} = r \omega\\
+\implies v=r \omega\\
+\implies 2 \pi f r = r \omega\\
+\therefore \omega = 2 \pi f\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$v_{max} = \frac{2 \pi A}{T} = \omega A$}\\
+$x(t) = A \sin ( \omega t + \phi_0)\\
+v(t)= A \omega \cos(\omega t + \phi_0)\\
+\therefore v_{max} = \omega A = \frac{2 \pi A}{T}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$U_{max}= \frac{1}{2} k x^2$ (potential in spring calculated by finding work done BY the spring)}\\
+$F=-\frac{dU}{ds}\\
+\implies - \int_{0}^x F ds = \int_0^U du\\
+\frac{1}{2} k x^2 = U\\
+\therefore U_{max} = \frac{1}{2} k x^2\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\omega= \sqrt{\frac{k}{m}}$}\\
+$\Delta x = x - x_{eq}\\
+x_{max}=A\\
+x_{eq}=0\\
+\frac{1}{2} m v_{max}^2 = \frac{1}{2} k A^2\\
+v_{max} = A \sqrt{\frac{k}{m}}\\
+v_{max} = \frac{2 \pi A}{T} = 2 \pi f A = \omega A\\
+\therefore \omega=\sqrt{\frac{k}{m}}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$2 \pi \sqrt{\frac{m}{k}}=T$}\\
+$\Delta U + \Delta K=0\\
+\frac{1}{2} k A^2 = \frac{1}{2} m v^2\\
+\implies A \sqrt{\frac{k}{m}} = v\\
+A \sqrt{\frac{k}{m}} = \frac{2 \pi A}{T}\\
+\sqrt{\frac{k}{m}}=\omega\\
+\therefore 2 \pi \sqrt{\frac{m}{k}}=T$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\omega = \sqrt{\frac{k}{m}}$}\\
+$F=ma = m \frac{dv}{dt} = m \frac{ds}{dt} \frac{dv}{ds} = m v \frac{dv}{ds}\\
+\implies \int F ds = \int_0^v mv dv = \frac{1}{2} m v^2 = K\\
+\Delta U = -W_{int}\\
+F=-\frac{dU}{ds}\\
+-\int_{s_i}^{s_f} F ds = \int_{U_i}^{U_f} dU\\
+x = \Delta x = x - x_{eq},\,\, x_{eq}=0\\
+k \int_A^0 x dx = \int_U^0 dU\\
+\therefore \frac{1}{2} k A^2 = U = \Delta U\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$a_x=-\omega^2 x$}\\
+$x(t)=A \cos ( \omega t + \phi_0)\\
+v(t)=-A \omega \sin(\omega t + \phi_0)\\
+a_x=\frac{dv_x}{dt}=\frac{d}{dt}(-A \omega \sin(\omega t + \phi_0))=-\omega^2 A \cos (\omega t + \phi_0)\\
+\therefore a_x=-\omega^2 x\\
+or\\
+-kx=ma \implies a=-\frac{k}{m} x = -\omega^2 x$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$a_x=-\frac{k}{m} x$}\\
+$a_x=\frac{dv_x}{dt} = \frac{d^2 s}{dt^2} = - \sqrt{\frac{k}{m}}^2 = -\frac{k}{m} x\\
+\therefore a_x = -\frac{k}{m} x$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\omega=\sqrt{\frac{g}{L}}$} (pendulum)\\
+$(F_{net})_x=ma = \sum_i (F_t)_i = (F_g)_t = -mg \sin \theta\\
+a=\frac{d^2 s}{dt^2} = -g \sin \theta\\
+\sin \theta \approx \theta if \theta << 1 rad\\
+(F_{net})_t = -mg \sin \theta \approx - m g \theta = - m g (\frac{s}{L})\\
+a=\frac{(F_{net})_t}{m}=-\frac{mg}{Lm} s = - \frac{g}{L} s\\
+\therefore \omega = \sqrt{\frac{g}{L}}\\$
+\underline{Note:} $s(t) = A \cos(\omega t + \phi)$ or $\theta(t)=\theta_{max} \cos(\omega t + \phi_0)$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\omega=\sqrt{\frac{Mg \ell}{I}}$}\\
+$\tau = r F \sin \theta\\
+\tau = - \ell mg \sin \theta=-mgd$ (negative due to clockwise)\\
+$\tau=I \alpha,\,\, \sin \theta \approx \theta\\
+\alpha = \frac{\tau}{I}=-\frac{-mg \ell \sin \theta}{I}=\frac{- m g \ell \theta}{I}\\
+a=\frac{dv}{dt}=\frac{d(\omega r)}{dt}=r \frac{d \omega}{dt} = r \alpha\\
+v=\frac{ds}{dt}=r \frac{d \theta}{dt}=r \omega;\,\,$ using: $\omega=\frac{d \theta}{dt}\\
+a=r \alpha = r\\
+\alpha = \omega^2 \theta\\
+\alpha = - \frac{mg \ell \theta}{I}=-\frac{mg \ell}{I} \theta\\
+\therefore \omega = \sqrt{\frac{mg \ell}{I}}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\sqrt{\beta^2 - \omega_0^2};\,\, \beta = \frac{b}{2m}\\
+\beta^2 > \omega_0^2\,\,$ over-damped\\
+$\beta^2<\omega_0^2\,\,$ under-damped\\
+$\beta^2=\omega_0^2$ critically damped\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$x(t) = A e^{-bt/2m} \cos (\omega t + \phi_0),\,\, \omega= \sqrt{\frac{k}{m} - \frac{b^2}{4 m^2}} = \sqrt{\omega_0^2 - \frac{b^2}{4 m^2}}$}\\
+$v_x=\frac{dx}{dt},\,\, a_x = \frac{d^2 x}{dt^2};\,\, (F_{net})_x = (F_{sp})_x + (F_{drag})_x=-kx - b v_x = m a_x \\$
+differential equation $\rightarrow m \frac{d^2 x}{dt^2} + b \frac{dx}{dt} + kx = 0\\
+\therefore x(t) = A e^{-bt/2m} \cos(\omega t + \phi_0)\\
+\therefore \omega = \sqrt{\frac{k}{m} - \frac{b^2}{4 m^2}}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$E(t) = E_0 e^{-t/\tau};\,\, \tau = \frac{m}{b}$}\\
+$E(t) = \frac{1}{2} k (x_{max})^2 = \frac{1}{2} k(A e^{-bt/2m})^2 = \frac{1}{2} k A^2 e^{-t/\tau}\\
+\therefore E(t) = E_0 e^{-t/\tau}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$D(x,t) = A \sin(kx - \omega t + \phi_0)$}\\
+$D(x,t=0) = A \sin(\frac{2 \pi }{\lambda} + \phi_0)\\
+D(x+ \lambda) = A \sin (\frac{2 \pi}{\lambda}(x+ \lambda) + \phi_0)\\
+=A \sin(\frac{2 \pi x}{\lambda} + 2 \pi + \phi_0) = A \sin(\frac{2 \pi x}{\lambda} + \phi_0)\\
+D(x-vt);\,\,$ Wave moving in positive x direction\\
+$D(x-vt,t=0)=A \sin(\frac{2 \pi}{\lambda}(x-vt) + \phi_0)\\
+-A \sin(\frac{2 \pi x}{\lambda} - \frac{2 \pi}{\lambda} v t + \phi_0) = A \sin ( \frac{2 \pi x}{\lambda} 00 \frac{2 \pi}{\lambda} \frac{\lambda}{T} t + \phi_0)\\
+\implies D(x,t) = A \sin(\frac{2 \pi x}{\lambda} - \frac{2 \pi}{T} t + \phi_0)\\
+\therefore D(x,t) = A \sin(k x - \omega t + \phi_0)\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$v = \frac{\omega}{k}$}\\
+$v= \frac{\lambda}{T} = (\frac{2 \pi}{2 \pi}) \frac{\lambda}{T} - \frac{2 \pi}{T} ( \frac{\lambda}{2 \pi}) = \frac{2 \pi}{T} (\frac{2 \pi}{\lambda})^{-1}= \frac{\omega}{k}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\frac{\partial^2 D}{\partial t^2} = \frac{T_s}{\mu} \frac{\partial^2 D}{\partial x^2},\,\, \mu = \frac{m}{L}$} $\frac{\partial^2 D}{\partial t^2} = v^2 \frac{\partial^2 D}{\partial x^2}\\
+v_y = \frac{\partial D}{\partial t}\\
+a_y = \frac{\partial^2 D}{\partial t^2}\\
+m a_y = m \frac{\partial^2 D}{\partial t^2} = \mu \Delta x \frac{\partial^2 D}{\partial t^2}\\
+(F_{net})_y = T_y (x + \Delta x) + T_y(x)\\
+\frac{T_y(x+\Delta x)}{T_s} = slope(x+ \Delta x) $of string = slope of string $= \frac{\partial D}{\partial x}\\
+T_y(x+ \Delta x) = \frac{T_y}{(x+ \Delta x)} = \frac{T_y (x + \Delta x)}{T_s};\,\, T_s = \frac{\partial D}{\partial x} T_s |_{x+ \Delta x}\\
+T_y(x) = - \frac{T_y(x)}{T_s} T_s =-\frac{T_y(x)}{T_s} T_s = - \frac{\partial D}{\partial x} T_s |_x\\
+(F_{net} )_y = T_y(x + \Delta x) + T_y(x) = T_s [\frac{\partial D}{\partial x}|_{x+ \Delta x} - \frac{\partial D}{\partial x} |_x]\\$
+$\frac{\partial^2 D}{\partial t^2 = \lim_{\Delta x \rightarrow 0} \frac{T_s}{\mu} \frac{\partial D}{\partial x}|_{x + \Delta x} - \frac{\partial D}{\partial x}|_x}{\Delta x}\\
+\therefore \frac{\partial^2D}{\partial t^2} = \frac{T_s}{\mu} \frac{\partial^2D}{\partial x^2}$ (wave equation)\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$v= \sqrt{\frac{T_s}{\mu}}$}\\
+$D(x,t)= A \sin(kx - \omega t + \phi_0)\\
+\frac{\partial^2 D}{\partial x^2} = \frac{\partial }{\partial x}(\frac{\partial D}{\partial x}) = -A k^2 \sin(kx-\omega t + \phi_0)\\
+\frac{\partial D}{\partial t} = - \omega A \cos (kx - \omega t + \phi_0)\\
+\frac{\partial^2 D}{\partial t^2} = - \omega^2 A \sin(kx - \omega t + \phi_0)\\
+\frac{\partial^2 D}{\partial t^2} = \frac{T_s}{\mu} \frac{\partial^2 D}{\partial x^2}\\
+-\omega^2 A \sin (kx - \omega t + \phi_0) = -\frac{T_s}{\mu} A k^2 \sin(kx- \omega t + \phi_0)\\
+\omega^2 = \frac{T_s}{\mu} k^2 \implies \omega = k \sqrt{\frac{T_s}{\mu}}\\
+\therefore v= \frac{\omega}{k} = \sqrt{\frac{T_s}{\mu}}\\
+\therefore \frac{\partial^2 D}{\partial t^2} = v^2 \frac{\partial ^2 D}{\partial x ^2}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\lambda_{vac} f_{vac} = c,\,\, \lambda_{mat} f_{mat} = \frac{c}{n} = v_{mat},\,\, n \equiv \frac{c}{v_{mat}}$}\\
+$\lambda_{mat} = \frac{c}{n f_{vac}},\,\, \lambda_{mat} = \frac{v_{mat}}{f_{mat}} = \frac{c}{n f_{mat}} = \frac{c}{n f_{vac}},\,\, f_{vac} = f_{mat}\\
+\therefore \lambda_{mat} = \frac{c}{n f_{vac}}$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\frac{\partial^2 D}{\partial t^2} = \frac{B}{\rho} \frac{\partial^2 D}{\partial x^2}$}$,\,\, \sqrt{\frac{B}{\rho}} = v\\
+\frac{\Delta V}{V} = -\frac{P}{B}\\
+L_f = L_i + (D(x+ \Delta x,t) - D(x,t))\\
+V_f = A L_f = A(L_i + (D(x + \Delta x,t) - D(x,t)))\\
+V_i = A L_i = A \Delta x\\
+\frac{\Delta V}{V} = \lim_{\Delta x \rightarrow 0} \frac{A(L_i + (D(x+\Delta x,t) - D(x,t)-D(x,t))-L_i)}{A \Delta x} = \frac{\partial D}{\partial x}\\
+\implies P=-B \frac{\partial D}{\partial x} \implies \frac{\partial P}{\partial x} = - B \frac{\partial^2 D}{\partial x^2}\\
+P=\frac{F}{A} \implies P A=F;\,\, \rho =\frac{m}{V} \implies \rho A \Delta x=m\\
+F_{net} = A(P(x,t)-P(x+\Delta x,t))=ma=\rho A \Delta x \frac{\partial^2 D}{\partial t^2}\\
+\implies \lim_{\Delta x \rightarrow 0} -\frac{1}{\rho} \frac{(P(x+\Delta x,t) - P(x,t))}{\Delta x} = \frac{\partial^2 D}{\partial t^2} = -\frac{1}{\rho} \frac{\partial P}{\partial x}\\
+\implies -\rho \frac{\partial^2 D}{\partial t^2} = \frac{\partial P}{\partial x}\\
+D(x,t) = A \sin (kx- \omega t + \phi_0)\\
+\frac{\partial D}{\partial x} = A k \cos(kx- \omega t + \phi_0);\,\, \frac{\partial D}{\partial t} = - A \omega \cos (kx- \omega t + \phi_0)\\
+\frac{\partial^2 D}{\partial x^2} = - A k^2 \sin(kx- \omega t + \phi_0);\,\, \frac{\partial^2 D}{\partial t^2}=-A \omega^2 \sin (kx - \omega t + \phi_0)\\
+\frac{\partial P}{\partial x} = -\rho \frac{\partial^2 D}{\partial t^2} = - B \frac{\partial^2 D}{\partial x^2}\\
+\implies \frac{\partial^2 D}{\partial t^2} = \frac{B}{\rho} \frac{\partial^2 D}{\partial x^2}\\
+\implies -A \omega^2 \sin(kx-\omega t + \phi_0)=-\frac{B}{\rho} A k^2 \sin(kx-\omega t + \phi_0)\\
+\implies \omega^2 = \frac{B}{\rho} k^2\\
+\implies \frac{(2 \pi)^2}{T^2 }=\frac{B}{\rho} \frac{(2 \pi)^2}{\lambda^2} \implies v^2 = \frac{V}{\rho}\\
+\therefore v=\sqrt{\frac{B}{\rho}}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Note:} as temperature increases, density decreases $\implies \rho_T \propto \frac{1}{T} \implies \rho_T)(T) = \frac{C}{T} \implies \rho_T(273) = \rho_0 = \frac{C}{273} \implies C = 273 \cdot \rho\\
+\therefore \rho_T = \rho_0 \frac{273}{T}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$331 m/s\sqrt{\frac{T(C \deg) + 273}{273}} = v_{sound}$}\\
+$\rho_T = \rho_0 \frac{273}{T(K)}=\rho_0 \frac{273}{T(C \deg) + 273}\\
+v_{sound} = \sqrt{\frac{B_0}{\rho_T}} = \sqrt{\frac{B_0}{\rho_0}} \sqrt{\frac{T(C \deg) + 273}{273}} = 331 m/s \sqrt{\frac{T(C \deg) + 273}{273}}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$k \Delta x = 2 \pi \frac{\Delta x}{\lambda}$} (pg. 442)\\
+Consider two different x values on the same wave, this corresponds to phase: $\phi_2=k x_2 + \omega t + \phi_0$, and $\phi_1 = k x_1 + \omega t + \phi_0$. This point in the book does not appear to be dealing with interference yet.
+$\Delta \phi= \phi_2 - \phi_1 = (k x_2 - \omega t + \phi_0) - (k x_1 - \omega t + phi_0)\\
+=k x_2 - k x_1 = k \Delta x \\
+\therefore k \Delta x = 2 \pi \frac{\Delta x}{\lambda}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$f_+ = \frac{f_0}{1- v_s/v}$ (Doppler effect for an approaching source)}\\
+d - difference between how far the wave has moved and how far the sources has moved and how far the source has moved.\\
+$v=\frac{\lambda}{T} \implies f_- = \frac{v}{d-} = \frac{v}{\lambda_-} = \frac{v}{\Delta x_{wave} - \Delta x_{source}} = \frac{v}{vT+v_s T} = \frac{f_0}{1+ \frac{v_s}{v}}\\
+$
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$f_- = \frac{f}{1+\frac{v_s}{v}}$ (doppler effect for receeding source)}\\
+$v=\frac{\lambda}{T} \implies f_- = \frac{v}{d_-} = \frac{v}{\lambda_-} = \frac{v}{\Delta x_{wave} + \Delta x_{source} } = \frac{v}{vT+ v_s T} = \frac{f_0}{1+\frac{v_s}{v}}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$f_+=(1+\frac{v_0}{v})f_0$ (observer approaching source)}\\
+$v=\frac{\lambda}{T} \implies f_+ - \frac{v}{\lambda} = \frac{v+v_0}{T} = (1+ \frac{v_0}{v})f_0\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+\item \underline{$f_-=(1-\frac{v_0}{v})f_0$} (observer receeding source)\\
+$v=\frac{\lambda}{T} \implies f_- = \frac{v}{\lambda_-} = \frac{v-v_0}{vT} = (1-\frac{v_0}{v})f_0\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$f_{++}=(\frac{v+v_0}{v-v_s})f_0$}\\
+$f_{++}$ the first plus refers to observer approaching source and the second + refers to the source approaching the observer.\\
+$f=\frac{v}{\lambda}=\frac{v+v_0}{vT-v_s T} = (\frac{v+v_0}{v-v_s})f_0\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$f_{+-}=(\frac{v+v_0}{v+v_s})f_0$}\\
+$f=\frac{v}{\lambda}=\frac{v+v_0}{vT+v_s T}=(\frac{v+v_0}{v+v_s})f_0\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$f_{-+}=(\frac{v-v_0}{v-v_s)f_0}$}\\
+$f=\frac{v}{\lambda} = \frac{v-v_0}{vT-v_sT}=(\frac{v-v_0}{v-v_s})f_0\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$f_{--} = (\frac{v-v_0}{v+v_s})f_0$}\\
+$f=\frac{v}{\lambda}=\frac{v-v_0}{vT+v_s T} = (\frac{v-v_0}{v+v_s)f_0}$
+
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Note:} $\phi$ (phase constants) are characteristics of the source, not the medium
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$D(x,t)=A(x) \cos ( \omega t),\,\, A(x) = 2 a \sin (kx)$ (standing waves)} (pg. 458)\\
+$D_R = a \sin(k x - \omega t)$ (right)\\
+$D_L = a \sin(kx + \omega t)$ (left)\\
+$D(x,t) = D_R + D_L = a \sin(kx - \omega t) + a \sin(kx + \omega t)\\$
+\underline{recall:} $\sin(\alpha \pm \beta) = \sin \alpha \cos \beta \pm \cos \alpha \sin \beta\\
+D(x,t) = a ( \sin (kx - \omega t) + \sin (kx + \omega t))\\
+= a(( \sin(kx) \cos (\omega t) - \cos (k x) \sin(\omega t)) + (\sin (kx) \cos (\omega t) + \cos (kx) \sin(\omega t))\\
+\therefore a ( \sin(kx) \cos (\omega t) + \sin (kx) \cos (\omega t)) = 2 a \sin ( \omega t) \cos (\omega t)\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$k x_m = \frac{2 \pi}{\lambda} x_m= m \pi$ (location of nodes in previous superposition)}\\
+\underline{aside:} $A(x) = 2 a \sin (k x) = 0 (occurs when A(x) = 0)\\
+\implies k x_m = \frac{2 \pi}{\lambda} x_m = m \pi,\,\,$ for $m \in \mathbb{N} \bigcup \{ 0 \}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\lambda_m = \frac{2 L}{m},\,\, m \in \mathbb{N},\,\, f_m = \frac{mv}{2 L}$}$\,\, \lambda_m = \frac{4L}{m}= \frac{4 L}{1 + 2n}\,\, n = 0,1,2, \dots\\
+2 a \sin (k L) = 0$ (boundary condition)\\
+$\implies \sin(kL) = 0\\
+\implies k L = m \pi\\
+\implies \frac{2 \pi}{\lambda_m} L = m \pi\\
+\implies \frac{\lambda_m}{2 \pi L} = \frac{1}{m \pi} \implies \lambda_m = \frac{2 L}{m},\,\, m \in \mathbb{N}\\
+\therefore f_m = \frac{v}{\lambda_m} = \frac{v}{(2L/m)}=\frac{vm}{2 L}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Note:} $n = \frac{\lambda}{\lambda_f} $( top is in vac bottom in substance, no phase shift if $n_f < n_i$)
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\Delta \phi = 2 \pi \frac{2 n d}{\lambda}$}\\
+$\Delta \phi = ( k x_2 + \phi_{20} + \pi) - ( k x_1 +  \phi_{10} + \pi)$ $x_1, x_2$ measured from the sources\\
+$\Delta = k \Delta x + \Delta \phi_0\\
+\Delta \phi_0 = 0,\\, \phi_{10} = \phi_{20}\\
+\Delta x = 2 d\\
+k = \frac{2 \pi}{\lambda_f}\\
+\lambda_f = \frac{\lambda}{n}\\
+\Delta \phi = \frac{2 \pi}{(\lambda/n)}(2d) = 2 \pi \frac{2 n d}{\lambda}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\lambda_c = \frac{2 n d}{m}$}$,\,\, m \in \mathbb{N},\,\,$(page 473)\\
+$\Delta \phi = 2 \pi m$ (constructuve)\\
+$\Delta \phi = 2 \pi \frac{2 nd}{\lambda} \implies 2 \pi ( \frac{2nd}{\lambda}) = 2 \pi m\\
+\implies \frac{\lambda}{2 nd} = \frac{1}{m} \implies \lambda = \frac{2nd}{m}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\therefore \lambda_d = \frac{2nd}{m-\frac{1}{2}},\,\, m \in \mathbb{N}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\lambda_d = \frac{2nd}{m-\frac{1}{2}},\,\, m \in \mathbb{N}$}\\
+$\Delta \phi = 2 \pi ( m - \frac{1}{2})$ (why not at $2 \pi (m+ \frac{1}{2}))?\\
+\implies \Delta \phi = 2 \pi \frac{2nd}{\lambda} = 2 \pi ( m- \frac{1}{2})$ (destructive)\\
+$\implies \frac{2nd}{\lambda} = m - \frac{1}{2}\\
+\implies \frac{\lambda}{2nd} = \frac{1}{m-\frac{1}{2}}\\
+\therefore \lambda = \frac{2nd}{m- \frac{1}{2}}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{ phase differences} (radial)\\
+\item \underline{$\Delta \phi = 2 \pi \frac{\Delta r}{\lambda} + \Delta \phi_0 = 2 \pi m ( m- \frac{1}{2}$ (destructive)}\\
+$D= D_1 + D_2 = a_1 \sin (k r_1 - \omega t + \phi_{10}) + a_2 \sin(k r_2 - \omega t + \phi_{20})\\
+\Delta \phi = ( k r_1 - \omega t + \phi_{10} ) - ( k r_2 - \omega t + \phi_{20})\\
+=kr_1 - kr_2 + \phi_{10} - \phi_{20}\\$
+$=k \Delta r + \Delta \phi_0,\,\,$ \\
+\underline{recall:} $k = \frac{2 \pi}{\lambda}\\
+\therefore \Delta \phi = 2 \pi \frac{\Delta r}{\lambda} + \Delta \phi_0 = 2 \pi m\\
+\therefore \Delta \phi = 2 \pi \frac{\Delta r}{\lambda} + \Delta \phi_0 = 2 \pi (m- \frac{1}{2})\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$|f_1 - f_2| = f_{beat}$}\\
+$D_1 = a \sin (- \omega_1 t + \pi) = a \sin (\omega_1 t)\\
+D_2 = a \sin (- \omega_2 t + \pi) = a \sin (\omega_2 t)\\
+D = D_1 + D_2 = a ( \sin \omega_1 t + \sin \omega_2 t)\\$
+Identity: $\sin \alpha + \sin \beta = 2 \cos [ \frac{1}{2}( \alpha - \beta)] \sin [ \frac{1}{2} ( \alpha + \beta)]\\
+\alpha = \omega_1 t,\,\, \beta = \omega_2 t\\
+\implies 2 a \cos[ \frac{1}{2} ( \omega_1 t - \omega_2 t)] \sin [ \frac{1}{2}(\omega_1 t + \omega_2 t)]\\$
+modulation frequency: $\omega_{mod} = \frac{1}{2} | \omega_1 - \omega_2|\\
+2 a \cos ( \omega_{mod} t) \sin ( \omega_{avg} t)\\
+\therefore f_{beat} = 2 f_{mod} = 2 \frac{\omega_{mod}}{2 \pi} = ( \frac{\omega_1}{2 \pi} - \frac{\omega_2}{2 \pi}) = |f_1 - f_2|\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Importand formulas}\\
+"N-atoms" $\sim \frac{N}{V}$ (moles of a substance)\\
+number of. atoms $\sim N = \frac{M}{m} \frac{\sim mass}{\sim atomic mass}$\\
+strain $= \frac{\Delta L}{L} = \alpha \Delta T,\,\, stress =\frac{F}{A} = Y \frac{\Delta L}{L}\\$
+$\frac{\Delta V}{V} = \beta \Delta T,\,\, \beta \sim$ coeff. of volume expansion\\
+$T_F=\frac{9}{5} T_C + 32^\circ\\$
+\underline{Note:} $\frac{F}{A}$ is proportional to the force pulling on each bond, $\frac{Delta L}{L}$ is proportional to the stretch of each bond\\
+$\implies \frac{F}{A} = Y \frac{\Delta L}{L}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\beta_{solid} = 3 \alpha$}\\
+$V=L^3\\
+\implies d V = 2 L^2 d L\\
+\implies \frac{dV}{V} = \frac{3 d L}{L}\\
+\implies \beta \Delta = 3 \alpha \Delta T\\
+\therefore \beta = 3 \alpha\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\frac{P_f V_f}{T_f}=\frac{P_i V_i}{T_i}$} (page 501)\\
+$PV=nRT\\
+\frac{PV}{T} = n R = constant\\
+\therefore \frac{P_i V_i}{T_i} = \frac{P_f V_f}{T_f}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$PV = N k_B T$}\\
+$PV = n R T =\frac{N}{N_a} RT = N \frac{R}{N_a} T\\$
+\underline{recall:} $n= \frac{N}{N_a},\,\, k_B = \frac{R}{N_a} = 1.38 E -23 \frac{J}{K}\\
+\therefore PV = N k_B T\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$W_{ext} = - \int P dV$} (work done on gas)\\
+$W= \int_{s_i}^{s_f} F ds\\
+(F_{ext})_t = 0 (F_{gas})_x = - PA\\
+d W_{ext} = (F_{ext})_x dx = - P A dx\\
+d W_{ext} = - P dV\\
+\therefore W_{ext} = - \int P dV\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$W=\int_{V_i}^{V_f} F ds = 0$} (isochoric)\\
+$V_f = V_i \implies W=0\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$W_{ext} = - P \Delta V$} ( isobaric) 
+$\Delta E_{th} = W + Q \implies P = const\\
+W_{ext} = - P \int_{V_i}^{V_f} dV = - P \Delta V\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$W=-nRT ln (\frac{V_f}{V_i} = - P_i V_i \ln(\frac{V_f}{V_i}) = - P_f V_f \ln (\frac{V_f}{V_i})$} (isothermal $W=-Q$ since $\Delta E_{th} = n C_V \Delta T = 0\\
+W= - \int_{V_i}^{V_f} P d V = - \int_{V_i} ^{V_f} \frac{nRT}{V} dV = -nRT \int_{V_i}^{V_f} \frac{1}{V} dV\\
+PV = nRT \implies P=\frac{nRT}{V}\\
+=-nRT (\ln V_f - \ln V_i) = -nRT \ln(\frac{V_f}{V_i})\\
+nRT= P_i V_i = P_f V_f\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Note:} $\Delta E_{th} = W + Q = W + 0 = W \implies W=n C_V \Delta T$ (adiabatic process)
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$Q=n C_P \Delta T$ (Temp change at const. pressure)\\
+$Q=nC_V \Delta T$ (Temp change at const. vol)\\
+$Q=mc \Delta T\\$
+$Q=\begin{cases}$
+	$\pm M L_f $	melt/freeze$\\$
+	$\pm M L_V$	boil/condense
+$\end{cases}$\\
+\underline{Note:} melting is $(+)$ becauseheat is added to the ice cube\\
+$\Delta E_{sys} = \Delta E_{mech} + \Delta E_{th} = W + Q$ (general statement of conservation of energy)
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\Delta E_{th} = W + Q$} (first law of thermodynamics)\\
+$\Delta E_{sys} = \Delta E_{mech} + \Delta E_{th} = W + Q\\
+\Delta E_{mech} = 0\\
+\implies E_{th} = W + Q\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$R = C_p - C_v$}\,\, \item \underline{$\Delta E_{th} = n C_v \Delta T$} (any ideal-gas process)\\
+Process A: Isochoric $(\Delta E_{th})_A = W + Q = 0 + Q_{const. V.} = n C_V \Delta T;\,\, \Delta T_A = \Delta T_B\\$
+Process B: Isobaric $(\Delta E_{th})_B = W + Q = - P \Delta V + Q_{const P.} = - P \Delta V + n C_P \Delta T\\
+- P \Delta V + n C_P \Delta T = n C_V \Delta T\\$
+ \underline{Note:} $\Delta E_{th},$ the change in thermal energy of a gas, is the same for any two processes that have the same $\Delta T$, The converse is also true\\
+ \underline{recall:} $PV = n R T\\
+ \implies \Delta (PV) = \Delta (n R T)\\
+ \implies P \Delta V = n R \Delta T\\
+ - n R \Delta T + n C_p \Delta T = n C_V \Delta T\\
+ \implies C_P - R = C_V\\
+ \therefore C_P - C_V = R\\$
+ \underline{Summary:} set $\Delta E^A_{th} = \Delta E^B_{th} A \sim$ isochoric $B \sim$ isobaric this equality holds since $\Delta T_A = \Delta T_B\\$
+ 
+ \underline{Note:} U and T are state variables and do not depend on path so U(P+dp,V)=U(P,V+dV)
+ \hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Note:} $\gamma= \frac{C_P}{C_V} = \begin{cases} 1.67 \rm{monotomic gas} \\ 1.4 \rm{diatomic gas} \end{cases}\\
+$
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$P_f V_f^{\gamma} = P_i V_i^{\gamma}$} (adiabatic process)\\
+(first law ) $\Delta E_{th} = W + Q \\
+\implies d E_{th} = d(W + Q)\\
+\implies dE_{th} = d W + dQ\\$ adiabatic $dQ = 0\\
+\implies d E_{th} = d W\\$
+\underline{recall:} $d E_{th} = n C_V dT;\,\, d W = - P d V\\
+\implies n C_V d T = - P d V\\
+p V = n R T \implies P= \frac{nRT}{V}\\
+\implies n C_V d T = - \frac{nRT}{V} d V\\
+\implies \frac{dT}{T} = - \frac{R}{C_V} \frac{dV}{V}\\$
+use: $\gamma= \frac{C_P}{C_V} and C_P = C_V + R\\
+\implies \frac{R}{c_V} = \frac{C_P - C_V}{C_V} = \frac{C_P}{C_V} -1 = \gamma -1\\
+\implies \int_{T_i}^{T_f} frac{1}{T} dT = - (\gamma - 1) \int_{V_i}^{V_f} \frac{1}{V} d V\\
+\implies \ln(\frac{T_F}{T_i}) = (1- \gamma) \ln ( \frac{V_f}{V_i})\\
+\implies \ln (\frac{T_f}{T_i}) = \ln ((\frac{V_f}{V_i})^{(1-\gamma)})\\
+\implies \frac{T_f}{T_i} = ( \frac{V_f}{V_i})^{1- \gamma}\\
+\implies T_f V_f^{\gamma-1} = T_i V_i^{\gamma -1}\\$
+use: $T= \frac{PV}{nR}\\
+\therefore P_f V_f^{\gamma} = P_i V_i^{\gamma}\\$
+Aside: $\frac{dQ}{dt} = k \frac{A}{L} \Delta T\\
+\Delta T= T_H - T_C\\$
+\underline{summary:} $d E_{th} = d W + d Q = d W\\$
+use $d E_{th} = n C_V d T$
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Note:} $\lambda = \frac{L}{N_{col}},\,\, \lambda \sim$ mean free path$,\,\, L \sim$ distance$,\,\, N_{col} \sim \#$ of collisions\\
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\lambda = \frac{1}{4 \sqrt{2} \pi (N/V) r^2}$} (mean free path)\\
+$N_{col} = \frac{N}{V} V_{cyl} = \frac{N}{V} \pi(2r)^2 L = 4 \pi \frac{N}{V} r^2 L\\
+\underline{recall:} \lambda = \frac{L}{N_{col}},\,\, \frac{N}{V}$ (number density)$,\,\, V_{cyl} = \pi R^2 L,\,\, R=2r\\
+\lambda = \frac{L}{N_{col}},\,\, = \frac{L}{4 \pi \frac{N}{V} r^2 L} = \frac{1}{4 \pi (N/V)r^2}$ (assumes other molecules are at rest (if moving then $\sqrt{2}$ is introduced)\\
+$\therefore \lambda = \frac{1}{4 \pi \sqrt{2} ( N/V) r^2}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$P = \frac{1}{3} \frac{N}{V} m v_{rms}^2$}\\
+$\Delta p_x = m(-v_x) - v_x m = -2 m v_x\\
+\implies \Delta P_x = N_{col} \Delta p_x = -2 N_{col} m v_x\\$
+recall: $\Delta p_x = (F_{avg})_x \Delta t\\
+\implies (F_{on gas})_x = \frac{\Delta p_x}{\Delta t} = \frac{-2 N_{col} m v_x}{\Delta t}\\
+\implies (F_{on wall})_x = \frac{2 N_{col} m v_x}{\Delta t}\\$
+number of molecules in a given volume is: $\frac{N}{V} A \Delta x = \frac{N}{V} A v_x \Delta t$ but only half are traveling right so $N_{col} = \frac{1}{2} \frac{N}{V} A v_x \Delta t\\
+\implies (F_{on wall})_x = \frac{N}{V} m v_xT^2 A\\$
+in general, you can use $v_{avg}$ for molecules in container\\
+$\implies (F_{on wall})_x = \frac{N}{V} m (v_x^2)_{avg} A\\$
+$x$- axis ain't special\\
+$(v_x^2)_{avg} = ( v_y^2)_{avg} = (v_z^2)_{avg}\\
+(v_{rms})^2 = (v_x^2)_{avg} + (v_y^2)_{avg} + (v_z^2)_{avg} = 3 (v_x^2)_{avg}\\
+\implies (F_{on wall})_x = \frac{1}{3} \frac{N}{V} m v_{rms}^2 A\\
+\therefore P=\frac{F}{A} = \frac{1}{3} \frac{N}{V} m v_{rms}^2\\$
+\underline{shortened:}\\
+find $F_x = \frac{\Delta p}{\Delta t}\\$
+then $P= \frac{F_x}{A}\\$
+use $N_{col} = \frac{1}{2} \frac{N}{V} A v_x \Delta t$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$v_{rms} = \sqrt{(v^2)_{avg}}$} (root mean square speed)\\
+$v= ( v_x^2 + v_y^2 + v_z^2)^{1/2}\\
+\implies (v^2)_{avg} = (v_x^2 + v_y^2 + v_z^2)_{avg}\\
+\implies (v^2)_{avg} = (v_x^2)_{avg} + (v_y^2)_{avg} + (v_z^2)_{avg}\\
+\therefore v_{rms} = \sqrt{(v^2)_{avg}}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\epsilon_{avg} = \frac{3}{2} k_B T$} (Kinetic energy (translational of molecule)\\
+$\implies \epsilon_{avg} = \frac{1}{2} m ( v^2)_{avg} = \frac{1}{2} m v_{rms}^2\\$
+\underline{recall:} $P= \frac{1}{3} \frac{N}{V} m v_{rms}^2\\
+\implies P= \frac{1}{3} \frac{N}{V} ( 2 \frac{1}{2} m v_{rms}^2) = \frac{2}{3} \frac{N}{V} (\frac{1}{2} m v_{rms}^2)\\
+\implies P= \frac{2}{3} \frac{N}{V} \epsilon_{avg}\\
+\implies PV = \frac{2}{3} N \epsilon_{avg}\\
+\underline{recall:} PV = N k_B T\\
+\implies \frac{2}{3} N \epsilon_{avg} = N k_ B T\\
+\implies \frac{2}{3} \epsilon_{avg} = k_B T\\
+\therefore \epsilon_{avg} = \frac{3}{2} k_B T\\$
+\underline{Note:} if two gases have the same temp then they have the same average translational kinetic energy\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$v_{rms} = \sqrt{\frac{3 k_B T}{m}}$}\\
+\underline{recall:} $\epsilon_{avg} = \frac{3}{2} k_B T\\
+\implies \frac{1}{2} m v_{rms}^2 = \frac{3}{2} k_B T\\
+\implies m v_{rms}^2 = 3 k_B T\\
+\therefore v_{rms} = \sqrt{\frac{3 k_B T}{m}}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$E_{th} = \frac{3}{2} N k_B T = \frac{1}{2} n R T$}\\
+$E_{th} = K_{micro} = \epsilon_1 + \epsilon_2 + \epsilon_3 + \epsilon_4 + \dots + \epsilon_N = N \epsilon_{avg}\\
+\underline{recall:} k_B = \frac{R}{N_a} ,\,\, \frac{N}{N_a} = n\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$C_V = \frac{3}{2} R$}\\
+\underline{recall:} $\frac{3}{2} n R \Delta T = \Delta E_{th}\\
+\Delta E_{th} = n C_V \Delta T\\
+n C_V \Delta T= \frac{3}{2} n R \Delta T\\
+\therefore C_V = \frac{3}{2} R$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Equipartition Theorem:} Thermal energy of a system is divided among all possible degrees of freedom. Each mode contains $\frac{1}{2} N k_B T or \frac{1}{2} n R T$ of energy.\\
+\underline{ex.} a solid has 6 degrees of freedom so a solid stores $6 ( \frac{1}{2} N k_B T) = 3 N k_B T$ of energy. Diatomic gases have 5
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Engines}\\
+$(\Delta E_{th})_{net} = 0\\
+(\Delta E_{th})_{net} = W_{ext} + Q = - W_s + Q = 0\\
+W_s = W_{out} = Q_{net} = Q_H - Q_C$ (work per cycle by the heat engine)\\
+$W_s$ (work done by the system)
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{First Law:} Energy is conserved; that is, $\Delta E_{th} = W+Q$\\
+\underline{Second Law:} Most macroscopic processes are irreversible.\\
+In particular, heat energy is transferred spontaneously from a hotter system to a colder system but never from a colder system to a hotter system.
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\eta = 1- \frac{Q_C}{Q_H}$} (Heat Engines)\\
+$W_{out} = Q_H - Q_C\\
+\eta = \frac{W_{out}}{Q_H} = \frac{what you get}{what you paid}\\
+\eta = \frac{W_{out}}{Q_H} = \frac{Q_H - Q_C}{Q_H} = 1- \frac{Q_C}{Q_H}\\
+\therefore \eta= 1- \frac{Q_C}{Q_H}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Refrigerators}\\
+(coefficient of performance) $k = \frac{Q_C}{W_{in}} = \frac{what you get}{what you paid}\\
+Q_H = Q_C + W_{in}\\$
+no engine can exceed $k$ s.t. $k= \frac{T_C}{T_H - T_C}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{E}_{dipole} = \frac{-k \vec{p}}{r^3}$} $\vec{p}$ (from negative to positive)\\
+$(E_{dipole})_y = (E_+)_y + (E_-)_y = \frac{-k q s}{2(x^2 + \frac{s^2}{4})^{3/2}} - \frac{kqs}{2(x^2 + s^2/4)^{3/2}} = \frac{-kqs}{8(\frac{x^2}{4} + s^2)^{3/2}}\\
+= \frac{-k qs}{8 (\frac{x^2}{4} + s^2)^{3/2}} = \frac{-kqs}{8 x^3(\frac{1}{4} + \frac{s^2}{x^2})^{3/2}}\\
+for x >> s\\
+\therefore (E_{dipole})_y \approx \frac{-kqs}{x^3} = \frac{-k \vec{p}}{x^3}\\
+\sin \theta = - \frac{s}{-2(x^2 + s^2/4)^{1/2}}$
+this seems wrong
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{E}_{dipole} \approx \frac{2k \vec{p}}{r^3}$} (on axis of electric dipole)\\
+$(E_y)_{net} = (E_-)_y + (E_+)_y = \frac{-kq(y - \frac{1}{2})^2 + k q(y+ \frac{1}{2})^2}{(y+s/2)^2(y-s/2)}\\
+= \frac{kq((y+s/2)^2 - (y-s/2)^2)}{(y+ s/2)^2(y-s/2)^2} = \frac{kq(y^2 + ys + s^2/4 - y^2 + ys - s^2/4)}{(y+s/5)^2(y-s/2)^2}\\
+= \frac{2kqys}{y^2 y^2(1+ s/4y)^2(1-s/4y)^2}\\
+= \frac{2k y \vec{p}}{y^4} = \frac{2 k \vec{p}}{y^3}\\
+\therefore \vec{E}_{dipole} = \frac{2 k \vec{p}}{y^3}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Note:} $F_{1 on 2} = F_{2 on 1} = \frac{k |q_1| | q_2|}{r^2};\,\, \vec{E}(x,y,z) = \frac{\vec{F}_{on q}(x,y,z)}{q};\,\, \frac{1}{4 \pi \epsilon_0} \frac{q}{r^2} \hat{r}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$(E_{ring})_z = \frac{1}{4 \pi \epsilon_0} \frac{z Q}{(z^2 + R^2)^{3/2}}$}\\
+$(E_i)_z = E_i \cos \theta_i = \frac{1}{4 \pi \epsilon_0} \frac{\Delta Q}{r^2} \cos \theta_i \\
+r_i = (z^2 + R^2) \cos \theta_i = \frac{z}{r_i} = \frac{z}{\sqrt{z^2 + R^2}}\\
+(E_i)_z = \frac{1}{4 \pi \epsilon_0} \frac{\Delta Q}{z^2 + R^2} \frac{z}{\sqrt{z^2 + R^2}} = \frac{1}{4 \pi \epsilon_0} \frac{z}{(z^2 + R^2)^{3/2}} \Delta Q\\
+E_z = \sum_{i=1}^N (E_i)_z = \frac{1}{4 \pi \epsilon_0} \frac{z}{(z^2 + R^2)^{3/2}} \sum_{i=1}^N \Delta Q\\
+\underline{Note:} \sum_i^N \Delta Q = Q\\
+\therefore (E_{ring})_z = \frac{1}{4 \pi \epsilon_0} \frac{z Q}{(z^2 + R^2)^{3/2}}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$(E_{disk})_z = \frac{\eta}{2 \epsilon_0} [1- \frac{z}{\sqrt{z^2 + R^2}}]$}\\
+$\eta= \frac{Q}{A} = \frac{Q}{\pi R^2}\\
+\Delta A_i = 2 \pi r_i \Delta r;\,\, (E_{disk})_z = \sum_{i=1}^N (E_i)_z = \frac{z}{4 \pi \epsilon_0} \sum_{i=1}^N \frac{\Delta Q_i}{(z^2 + r_i^2)^{3/2}}\\
+\Delta Q = \eta \Delta A_i \implies \Delta Q_i = 2 \pi \eta r_i \Delta r\\
+(E_{disk})_z = \frac{\eta z}{2 \epsilon_0} \sum_{i=1}^N \frac{r_i \Delta r}{(z^2 + r_i^2)^{3/2}}\\
+as N \rightarrow \infty,\,\, \Delta r \rightarrow dr\\
+(E_{disk})_z = \frac{\eta z}{2 \epsilon_0} \int_0^R \frac{r dr}{(z^2 + r^2)^{3/2}} = \frac{\eta z}{2 \epsilon_0} [ \frac{1}{z} - \frac{1}{\sqrt{z^2 + R^2}}]\\
+\therefore (E_{disk})_z = \frac{\eta}{2 \epsilon_0} [ 1 - \frac{z}{\sqrt{z^2 + R^2}}]\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$E_{rod} = \frac{1}{4 \pi \epsilon_0} \frac{|Q|}{r \sqrt{r^2 + (L/2)^2}}$} (finite)\\
+$(E_i)_x = E_i \cos \theta_i = \frac{1}{4 \pi \epsilon_0} \frac{\Delta Q}{r_i^2} \cos \theta_i\\
+r_i = (y_i^2 + r^2)^{1/2},\,\, \cos \theta_i = \frac{r}{r_i} = \frac{r}{(y_i^2 + r^2)^{1/2}}\\
+(E_i)_x = \frac{1}{4 \pi \epsilon_0} \frac{\Delta Q}{y_i^2 + r^2} \frac{r}{\sqrt{y_i^2 + r^2}}\\
+= \frac{1}{4 \pi \epsilon_0} \frac{r \Delta Q}{(y_i^2 + r^2)^{3/2}}\\
+E_x = \sum_{i=1}^N (E_i)_x = \frac{1}{4 \pi \epsilon_0} \sum_{i=1}^N \frac{r \Delta Q}{(y_i^2 + r^2)^{3/2}}\\
+\Delta Q = \lambda \Delta y = (Q/L) \Delta y\\
+E_x = \frac{Q/L}{4 \pi \epsilon_0} \sum_{i=1}^N \frac{r \Delta y}{(y_i^2 + r^2)^{3/2}}\\
+let N \rightarrow \infty then \Delta y \rightarrow dy\\
+E_x = \frac{Q/L}{4 \pi \epsilon_0} \int_{- L/2}^{L/2} \frac{r dy}{(y^2 + r^2)^{3/2}}\\
+E_x = \frac{Q/L}{4 \pi \epsilon_0} \frac{y}{r \sqrt{y^2 + r^2}}|_{- L/2}^{L/2}\\
+= \frac{Q/L}{4 \pi \epsilon_0} [ \frac{L/2}{r \sqrt{(L/2)^2 + r^2}} - \frac{-L/2}{r \sqrt{(-L/2)^2 + r^2}} ] = \frac{1}{4 \pi \epsilon_0} \frac{Q}{r \sqrt{r^2 + (L/2)^2}}\\
+\therefore E_{rod} = \frac{1}{4 \pi \epsilon_0} \frac{|Q|}{r \sqrt{r^2 + (L/2)^2}}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{E}_{line} = ( \frac{1}{4 \pi \epsilon_0} \frac{2 | \lambda|}{r}, \{ \rm{away from line if} (+) \rm{toward line if charge} (-))$} (infinite rod)\\
+$E_{line} = \lim_{L \rightarrow \infty} E_{rod} = \lim_{L \rightarrow \infty} \frac{1}{4 \pi \epsilon_0} \frac{| Q|}{r \sqrt{r^2 + (L/2)^2}} = \lim_{L \rightarrow \infty} \frac{1}{4 \pi \epsilon_0} \frac{| \lambda|}{r \sqrt{(r/L)^2 + (1/2)^2}} = \frac{1}{4 \pi \epsilon_0} \frac{2 |\lambda|}{r}\\
+\therefore E_{line} = \frac{1}{4 \pi \epsilon_0} \frac{2 |\lambda|}{r}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$(E_{capacitor})_{inside} = \frac{|Q_{in}|}{\epsilon A}$}\\
+$(E_{cap})_{in} = E_- + E_+;\,\, (E_{cap})_{out} = 0\\
+\oint \vec{E}_- \cdot d \vec{A} = - E_- A - E_- A = \frac{(Q_{in})_-}{\epsilon_0},\,\, E_- \geq 0,\,\, (Q_{in})_- < 0\\
+\implies E_- = - \frac{1}{2} \frac{(Q_{in})_-}{\epsilon_0 A} = \frac{1}{2} \frac{(Q_{in})_+}{\epsilon_0}\\
+\implies E_+ = \frac{1}{2} \frac{(Q_{in})_+}{\epsilon_0 A}\\
+\implies (E_{cap})_{in} = E_+ + E_- = \frac{(Q_{in})_+}{|\epsilon_0 A} = \frac{|Q_{in}|}{\epsilon_0 A}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\vec{p}=q \vec{d}(\vec{d}$ from neg to positive)
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{E}_{pnlane} = ( \frac{|\eta|}{2 \epsilon_0}$,\,\, \{away from plane if charge +, toward plane if charge -\}}(plane of charge)\\
+$(E_{plane} = \lim_{R \rightarrow \infty} (E_{disk})_z = \lim_{R \rightarrow \infty} \frac{\eta}{2 \epsilon_0} [1- \frac{z}{\sqrt{z^2 + R^2}}]\\
+= \lim_{R \rightarrow \infty} \frac{\eta}{2 \epsilon_0} [ 1- \frac{z}{R \sqrt{(\frac{z}{R})^2 + 1}}]\\
+\vec{E}_{plane} = ( \frac{|\eta|}{2 \epsilon_0},\,\,$ \{ away from plane if charge is (+),\,\, toward plane if charge (-))\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{E}_{capacitor} = \begin{cases}
+\frac{Q}{\epsilon_0 A}, from (+) to (-) inside\\
+0 (outside)
+\end{cases}$}\\
+$\phi = \oint \vec{E} \cdot d \vec{A} = E A_{sphere} = \frac{Q}{\epsilon_0} \implies E= \frac{Q}{\epsilon_0 A}\\
+\therefore E_{cap} = \frac{Q}{\epsilon_0 A}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{E}_{out sphere} = \frac{1}{ 4 \pi \epsilon_0} \frac{Q}{r^2 \hat{r}}$} for $r \geq R\\
+EA = \frac{Q}{\epsilon_0} \implies E= \frac{Q}{A \epsilon_0} = \frac{Q}{4 \pi r^2 \epsilon_0}\\
+\therefore E =. \frac{Q}{4 \pi \epsilon_0 r^2}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{a}_c = \frac{q \vec{E}}{m_e}$}\\
+$F = m a = q E \implies ma = qE \implies a = \frac{qE}{m_e}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{\tau} = \vec{p} \times \vec{E},\,\, p=qs$}\\
+$\tau_+ = | \vec{r} \times \vec{F} | = \frac{1}{2} F s \sin \theta\\
+\tau_- = | \vec{r} \times \vec{F} = \frac{1}{2} s F \sin \theta\\
+\tau_{net} = \tau_+ + \tau_- = \frac{1}{2} s F \sin \theta + \frac{1}{2} s F \sin \theta = s F \sin \theta\\
+\therefore \vec{\tau} = q s E \sin \theta = p E \sin \theta = \vec{p} \times \vec{E}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{E} = ( \frac{\eta}{\epsilon_0}, (perp to surface))$} ($\vec{E}$ at surface of conductor)\\
+$\phi = \oint \vec{E} \cdot d \vec{A} = E A = \frac{Q}{ \epsilon_0}$ (gauss's Law) \underline{Note:} $\vec{E} = 0$ inside the conductor due to electrostatic equilibrium, see pg. 609\\
+$\eta = \frac{Q}{A}\\
+\eta A = A\\
+\implies E = \frac{\eta A}{\epsilon A}\\
+\therefore E = \frac{\eta}{\epsilon_0}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$U_{dip} = - p E \cos \phi = - \vec{p} \cdot \vec{E}$} $dW = \tau d \phi\\
+\int_0^{\theta} \vec{F}_{ex} \cdot d \vec{x} = - \int_0^{\theta} \tau d \theta=\vec{r }\cdot \vec{F}
+d W_{elec} = - p E \sin \phi d \phi = F ds \cos \theta,\,\, p = q d\\
+\implies \int d W = - \int_{\phi_i}^{\phi_f} \sin \phi p E d \phi = (p E \cos \phi ]_{\phi_i}^{\phi_f} = p E \cos \phi_f - p E \cos \phi_i\\
+\Delta U = - p E \cos \phi_f + p E \cos \phi_i$ (by convention $\phi_i = \frac{\pi}{2}$ is reference point\\\
+$\therefore U = - p E \cos \phi$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\Delta V = - \int_i^f \vec{E} \cdot d \vec{s}$}\\
+$V = \frac{U}{q}\\
+\implies \Delta U = - W(i \rightarrow f) = - \int_{s_i}^{s_f} F_s ds = - \int_i^f \vec{F} \cdot d \vec{s} q V = U \implies d(dV) = d U = - \vec{F} \cdot d \vec{s}\\
+\implies q d V = - \vec{F} \cdot d \vec{s}\\
+\implies \Delta V = - \int \vec{E} \cdot d \vec{s}\\
+\therefore \Delta V = - \int_i^f \vec{E} \cdot d \vec{s}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$E_s = - \frac{dV}{ds}$}, $\vec{E} = - \nabla V\\
+\Delta V = \frac{\Delta U_+}{q} = - \frac{W}{q} = - E_s \Delta s\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$V = \frac{kq}{r}$}\\
+$\Delta V = V(r) - V(\infty) = - \int_{\infty}^r E_s ds = \int_r^{\infty} E_s ds\\
+E_s = \frac{kq}{s^2},\,\, \Delta V = V(r);\,\,$ Since $V(\infty)=0\\
+\implies k q \int_r^{\infty} \frac{1}{s^2} ds = - k q(\frac{1}{s}]_r^{\infty} = \frac{kq}{r}\\
+\therefore V = \frac{kq}{r}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$U=- \frac{GMm}{r}$}\\
+Work done by the gravitational field given by
+$W= - \int_{\infty}^r F_{grav} dr\\$
+dr is positive, points to the right (the bounds show direction of path, if dr were negative it would have a double negative effect)
+$= - \int_{\infty}^r \frac{GMm}{r^2} dr\\
+= \frac{GMm}{r} \implies U = - W = - \frac{GMm}{r}\\$
+If we thought about it as the force of me, which is the force I would have to apply to bring it from infinity to r, would give us the potential energy.
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$v_{esc} = \sqrt{\frac{2 GM}{r}}$}\\
+$U_i + K_i = U_f + K_f\\
+- \frac{GMm}{r} + \frac{1}{2} m v ^2 = 0\\
+\therefore v_{esc} = \sqrt{ \frac{2GM}{r}}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$E = - \frac{dV}{ds}$}\\
+$V= \frac{U}{q}\\
+\Delta V = \frac{\Delta U}{q} = - \frac{W}{q} = \frac{-F \Delta s}{q}\\
+\implies \frac{\Delta V}{\delta s} = - \frac{F}{q}\\
+\lim_{\Delta s \rightarrow 0} \frac{\Delta V}{\Delta s} = \frac{dV}{ds} = - \frac{F}{q} = - \frac{qE}{q}\\
+\therefore E = - \frac{dV}{ds}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$V_{point charge} = \frac{kq}{r}$}
+$V= \frac{U}{q}\\
+\implies \Delta V = \frac{\Delta U}{q} = - \frac{F \Delta s}{q}\\
+\implies \frac{dV}{ds} = - \frac{F}{q} = - E\\
+\implies E = - \frac{dV}{ds}\\
+\Delta V = V(r) - V(\infty) = - \int_{s_0}^s E ds = - \int_{\infty}^r \frac{kq}{s^2} ds = - ( \frac{kq}{s} ]_{\infty}^r = \frac{kq}{r}\\
+\therefore V(r) = \frac{kq}{r}'$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$C = \frac{\epsilon_0 A}{d}$}\\
+$\implies q= C \Delta V\\
+\Delta V = E d\\
+\implies q = C E d\\
+\implies q= C( \frac{q}{A \epsilon_0})d\\
+\implies 1- \frac{Cd}{A \epsilon_0}\\
+\therefore C = \frac{\epsilon_0 A}{d}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$C_{eq} = C_1 + C_2 + \cdots$}(parallel)\\
+$C_{eq} = \frac{Q_1}{\Delta V_C} + \frac{Q_2}{\Delta V_C} = \frac{Q_1 + Q_2}{\Delta V_C} = C_1 + C_2\\$
+using:\\
+$Q= C \Delta V\\
+\implies C= \frac{Q}{\Delta V}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$C_{eq} = ( \frac{1}{C_1} + \frac{1}{C_2} + \cdots)^{-1}$} (series)\\
+$q= C \Delta V,\,\, \frac{1}{C_{eq}} = \frac{\Delta V_1 + \Delta V_2 + \Delta V_3 + \cdots}{q} = \frac{\Delta V_1}{q} + \frac{\Delta V_2}{q} + \frac{\Delta V_3}{q} + \cdots\\
+C_{eq} = \frac{q}{\Delta V}\\
+\therefore C_{eq} = ( \frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3} + \cdots )^{-1}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$U_C = \frac{Q^2}{2 C} = \frac{1}{2} C ( \Delta V_C)^2$}\\
+$U= q \Delta V\\
+d U = d (q \Delta V)\\
+\implies dU = \Delta V dq = \frac{q}{C} dq\\
+\implies U_c = \frac{1}{C} \int_0^Q q dq = \frac{Q^2}{2C}\\$
+Using $Q= C \Delta V\\$
+$\implies U_C = \frac{(C \Delta V)^2}{2 C} = \frac{C62 \Delta V^2}{2 C}\\
+\therefore U_C = \frac{1}{2} C \Delta V^2$
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$u_E = \frac{energy stored}{Volume} = \frac{\epsilon_0 E^2}{2}$}\\
+$u_E = \frac{U}{V} = \frac{C( \Delta V)^2}{2 A d} = \frac{E A \epsilon_0}{E d} \frac{E^2 d^2}{2 A d} = \frac{E^2 \epsilon_0}{2}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{dielectric in capacitor}\\
+$\vec{E} = \vec{E}_0 - \vec{E}_{ind} = (E - E_{ind},$ from pos to neg)
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+$\star$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$C = \kappa C_0$};$\,\, \kappa = \frac{E_0}{E}\\$
+suppose I have a capacitor with charge q and dielectric. Now, spose I disconnect it and take out dielectric, the capacitor still has charge $q$. $q= q_{vac}\\$
+$C= \frac{q}{V} = \frac{q}{E d} = \kappa \frac{q_0}{E_0 d} = \kappa C_0\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$i_e = n_e A v_d$}\\
+$N_e = i_e \Delta t;\,\, \Delta x = v_d \Delta t;\,\, v = A \Delta x\\
+\frac{N_e}{V} = n_e \implies N_e = n_e V = n_e A \Delta x = n_e A v_d \Delta t = i_e \Delta t\\
+\implies n_e A v_d = i_e\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$i_e = n_e A \frac{e E \tau}{m}$}\\
+$a_x = \frac{F}{m} = \frac{q E}{m} = \frac{e E}{m}\\
+v_x = v_{0x} + a_x \Delta t = a_x \Delta t ( v_{0x} \sim when E=0) = 0\\
+\tau = \Delta t\\
+\implies v_d = \frac{e E \tau}{m}\\
+i_e = n_e A v_d = n_e A \frac{e E \tau}{m}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$J=\frac{I}{A} = n_e e v_d$}\\
+$I = e \frac{d N_e}{dt} = e i_e = n_e a e v_d\\
+\implies J= \frac{I}{A} = n_e e v_d\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$J= \sigma E$}\\
+$v_d = \frac{e E \tau}{m}\\
+\implies J= n_e e v_d = n_e \frac{e^2 \tau}{m} E = \sigma E\\
+\sigma =$ conductivity $=  \frac{n_e e^2 \tau}{m},\,\, \rho = \frac{1}{\sigma}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$R= \frac{\rho L}{A}$}\\
+\underline{recall:} $E = |- \frac{dV}{ds} | = \frac{d V}{ds}\\
+E = \frac{\Delta V}{\Delta s} = \frac{\Delta V}{L}\\
+I = J A = A \sigma E = A \frac{1}{\rho} E = \frac{A}{\rho} \frac{\Delta V}{L}\\
+\implies \Delta V = I R = \frac{\rho L}{A} I \implies R = \frac{\rho L}{A}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$P=I \varepsilon$} (Power of EMF)
+$P= \frac{dU}{dt} = \frac{d(q \Delta V_{bat})}{dt} = \Delta V \frac{dq}{dt} = I \Delta V = I \varepsilon\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$P_R= I \Delta V_R = I^2 R = \frac{(\Delta V_R)^2}{R}$}(Power dissipated by resistor)\\
+$\Delta E_{th} = q \Delta V_R\\
+P = \frac{d E_{th}}{dt} = \Delta V_R \frac{dq}{dt} = I \Delta V_R\\
+P_R = P_{bat}\\$
+
+
+
+\item \underline{$R_{eq} = R_1 + R_2 + \cdots + R_N$}(series resisttors)\\
+$R_{eq 12} = \frac{\Delta V}{I} = \frac{\Delta V_1 + \Delta V_2}{I} = R_1 + R_2\\
+\therefore R_{eq} = R_1 + R_2 + \cdots + R_N\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$R_{eq} = ( \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \cdots \frac{1}{R_N})^{-1}$}(parallel)\\
+$R_{eq} = \frac{\Delta V}{I} = \frac{V}{I_1 + I_2} = ( \frac{1}{R_1} + \frac{1}{R_2})^{-1}\\
+\therefore R_{eq} = ( \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \cdots + \frac{1}{R_N})^{-1}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$Q(t) = Q_0 e^{-t/RC}$}(RC circuit)\\
+$\Delta V_{cap}+ \Delta V_{res} = \frac{q}{C} - I R=0\\$
+but $I = \frac{d q_R}{dt} = - \frac{dq_C}{dt} = - \frac{dq}{dt}\\
+\implies \frac{q}{C} + IR = 0\\
+\implies \frac{I}{q} = - \frac{1}{RC} \implies \ln q = - \frac{t}{RC} + C;\,\, q(r) = Q_0\\
+\implies q(t) = Q_0 e^{-t/RC}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$I(t) = I_0 e^{-t/\tau}$}\\
+$- \frac{dQ}{dt} = I = \frac{Q_0}{\tau} e^{- t/ \tau} = I_0 e^{- t/ \tau}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$ \vec{B} = \frac{\mu_0}{4 \pi} \frac{I \Delta \vec{s} \times \hat{r}}{r^2}$}\\
+\underline{recall:} $\vec{B} = \frac{\mu_0}{4 \pi} \frac{q \vec{v} \times \hat{r}}{r^2}$
+$\implies \Delta Q \vec{v} = \Delta Q = \frac{\Delta \vec{s}}{\Delta t} = I \Delta \vec{s}\\
+\therefore \vec{B} = \frac{\mu_0}{4 \pi} \frac{I \Delta \vec{s} \times \hat{r}}{r^2}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{B}_{wire} = ( \frac{\mu_0}{2 \pi} \frac{I}{r}$, tangent to circle around in right hand direction)}\\
+$(B_i)_z = \frac{\mu_0}{4 \pi} \frac{I \Delta x \sin \theta_i}{r_i^2} = \frac{\mu_0}{4 \pi} \frac{I \sin \theta_i}{r_i^2} \Delta x = \frac{\mu_0}{4 \pi} \frac{I \sin \theta_i}{x_i^2 + y^2} \Delta x\\
+\sin \theta_i = \sin( 180 - \theta_i) = \frac{y}{r_i} \frac{y}{\sqrt{x_i^2 + y^2}}\\
+(B_i)_z = \frac{\mu_0}{4 \pi} \frac{Iy}{( x_i^2 + y^2)^{3/2}} \Delta x\\
+B_{wire} = \frac{\mu_0 I y}{ 4 \pi} \sum_i \frac{\Delta x}{(x_i^32 + y^2)^{3/2}} \rightarrow \frac{\mu_0 I y}{4 \pi} \int_{- \infty}^{\infty} \frac{dx}{(x^2 + y^2)^{3/2}}\\
+B_{wire} = \frac{\mu_0 I y}{4 \pi} \frac{x}{y^2( x^2 + y^2)^{1/2}}|_{- \infty}^{\infty} = \frac{\mu_0}{2 \pi } \frac{I}{y}\\
+\therefore B_{wire} = \frac{\mu_0}{2 \pi} \frac{I}{r}$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{B}_{wire} = ( \frac{\mu_0 I}{ 2 \pi r}$, tangent to circle around wire in right hand direction)}\\
+$(B_i)_z = \frac{\mu_0}{4 \pi} \frac{I \Delta x \sin \theta_i}{r_i^2} = \frac{\mu_0}{ 4 \pi} \frac{I \sin \theta_i}{r_i^2} \Delta x\\
+= \frac{\mu_0}{4 \pi} \frac{ I \sin \theta_i}{x_i^2 + y^2} \Delta x\\
+\sin \theta_i = \sin( 180 - \theta_i) = \frac{y}{r_i} = \frac{y}{\sqrt{x_i^2 + y^2}}\\
+\implies ( B_i)_z = \frac{\mu_0}{4 \pi} \frac{Iy}{(x_i^2 + y^2)^{3/2}} \Delta x\\
+\implies B_{wire} = \frac{\mu_0 I y}{4 \pi} \int_{- \infty}^{\infty} \frac{dx}{ ( x^2 + y^2)^{3/2}}\\
+= \frac{\mu_0 I y}{4 \pi} \frac{x}{y^2(x^2 + y^2)^{1/2}}|_{- \infty}^{\infty} = \frac{\mu_0}{ 2\pi} \frac{I}{y}\\
+\therefore B_{wire} = \frac{\mu_0}{4 \pi} \frac{I}{r}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$B_{loop} = \frac{\mu_0}{2} \frac{I R^2}{(z^2 + R^2)^{3/2}}$}\\
+$(B_i)_z = \frac{\mu_0}{4 \pi} \frac{I \Delta s}{r^2} \cos \phi = \frac{\mu_0 I \cos \phi}{4 \pi ( z^2 + R^2)} \Delta s\\
+\cos \phi = \frac{R}{r} \implies (B_i)_z = \frac{\mu_0 I R}{4 \pi ( z^2 + R^2)^{3/2}} \Delta s\\
+B_{loop} = \sum_i ( B_i)_z = \frac{\mu_0 I R}{4 \pi ( z^2 + R^2)^{3/2}} \sum_i \Delta s\\
+\therefore B_{loop} = \frac{\mu_0 I R}{4 \pi ( z^2 + R^2)^{3/2}} 2 \pi R = \frac{\mu_0}{2} \frac{I R^2}{(z^2 + R^2)^{3/2}}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{\tau} = \vec{\mu} \times \vec{B}$}\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$B_{coil center} = \frac{\mu_0}{2} \frac{NI}{R}$} ( $N$ - turn current loop) ( turns close together)\\
+\underline{recall:} $B_{loop} = \frac{\mu_0}{2} \frac{I R^2}{(z^2 + R^2)^{3/2}} let z=0\\$
+(N-turn) $B_{loop} = \frac{\mu_0}{2} \frac{I R^2}{(R^2)^{3/2}} = \frac{\mu_0}{2} \frac{NI}{R}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{B} = \frac{\mu_0}{4 \pi} \frac{2 \vec{\mu}}{z^3}$}\\
+$\vec{E}_{dipole} = \frac{1}{4 \pi \epsilon_0} \frac{2 \vec{p}}{z^3}\\
+B_{loop} = \frac{\mu_0}{2} \frac{I R^2}{(z^2 + R^2)^{3/2}};\,\, z>> R \implies (z^2 + R^2)^{3/2} \approx z^3\\
+B_{loop} = \frac{\mu_0}{2} \frac{I R^2}{z^3} = \frac{\mu_0}{4 \pi} \frac{2( \pi R^2) I}{z^3} = \frac{\mu_0}{4 \pi} \frac{2 A I}{z^3};\,\, \vec{\mu} = ( AI,\,\,$ from south to north)\\
+$\therefore \vec{B}_{dipole} = \frac{\mu_0}{4 \pi} \frac{2 \vec{\mu}}{z^3}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\oint \vec{B} \cdot d \vec{s} = \mu_0 I_{through}$}\\
+$\oint \vec{B} \cdot d \vec{s} = B \ell = B( 2 \pi r)\\
+B= \frac{\mu_0 I}{2 \pi r}\\
+B \ell = \frac{\mu_0 I}{2 \pi r} 2 \pi r = \mu_0 I\\
+\therefore \oint \vec{B} \cdot d \vec{s} = \mu_0 I_{through}$ ( use right hand rule to determine sign of the current)
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$B_{sol} = \frac{\mu_0 N I}{\ell} = \mu_0 n I$}\\
+$\oint \vec{B} \cdot d \vec{s} = B \ell = \mu_0 I_{through} = \mu_0 (NI)\\
+\implies B \ell = \mu_0 N I\\
+\therefore B = \frac{\mu_0 N I}{\ell} = \mu_0 n I\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$f_{cyclotron} = \frac{q B}{2 \pi m}$}\\
+$F= q v B = m \frac{v^2}{r}\\
+\implies q B = m \frac{v}{r}\\
+\implies \frac{qB}{m} = 2 \pi f\\
+\therefore f= \frac{qB}{2 \pi m}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\Delta H_v = \Delta V_H = \frac{IB}{net}$}\\
+$F_B = e v_d B = F_E = e E = e \frac{\Delta V}{w};\,\, \Delta V = \int_0^w \vec{E} \cdot d \vec{s} = \int_0^w E ds = E \int_0^w ds = w E\\
+\implies \Delta V_H = w v_d B\\$
+\underline{recall:} $J= n e v_d\\
+\implies v_d = \frac{J}{ne} = \frac{I/A}{ne} = \frac{I}{w t n e}\\
+A=wt\\
+\therefore V_H = \frac{IB}{net}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{F}_{wire} = I \vec{\ell} \times \vec{B}$}\\
+\underline{recall:} $I= \frac{Q}{t};\,\, \ell= v_d t;\,\, I t = Q;\,\, \vec{v}_d = \frac{\vec{\ell}}{t}\\
+\vec{F} = q \vec{v} \times \vec{B} = I t \frac{\vec{\ell}}{t} \times \vec{B} = I \vec{\ell} \times \vec{B}\\
+\therefore \vec{F} = I \vec{\ell} \times \vec{B}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\Delta V = v \ell B = \varepsilon$}\\
+$q v B = q E (Note: V \neq v_d)\\
+\implies E = v B\\
+\implies E_y = - \frac{d V}{ds} \implies E_y ds = - dV \implies -\int_0^{\ell} E_y ds = \int d V \implies \Delta V = - (-E \ell) = v B \ell\\
+\therefore \Delta V = v \ell B\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$F_{pull} = \frac{v \ell^2 B^2}{R}$}\\
+$F= I \ell B\\
+V = I R \implies I= \frac{V}{R} = \frac{v \ell B}{R}\\
+F= ( \frac{v \ell B}{R}) \ell B\\
+\therefore F= \frac{v \ell^2 B^2}{R}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$P_{input} = F_{pull} v = \frac{v^2 \ell^2 B^2}{R}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$P_{disp} = I^2 R = \frac{v^2 \ell^2 B^2}{R} ( P_{input} = P_{disp})\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\oint \vec{E} \cdot d \vec{s} = A | \frac{d B}{dt} |$}\\
+$d W = \vec{F} \cdot d \vec{s} = q \vec{E} \cdot d \vec{s}\\
+ \underline{Note:} | \frac{d \phi}{dt}| = | \vec{A} \cdot \frac{d \vec{B}}{dt} + \vec{B} \cdot \frac{d \vec{A}}{dt}|\\
+\implies W_{closed} = q \oint \vec{E} \cdot d \vec{s}\\
+\varepsilon = \frac{W_{closed}}{q} = \oint \vec{E} \cdot d \vec{s}\\
+\varepsilon = | \frac{d \phi_m}{dt}| = | \frac{d( \vec{B} \cdot \vec{A})}{dt}| = | \vec{A} \cdot \frac{d \vec{B}}{dt} + \vec{B} \cdot \frac{d \vec{A}}{dt}| = A | \frac{d B}{dt}|\\
+\therefore \oint \vec{E} \cdot d \vec{s} = A | \frac{dB}{dt} |$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$E=\frac{r}{2} | \frac{dB}{dt} |$ (inside solenoid)}\\
+$\varepsilon = \oint \vec{E} \cdot d \vec{s} = E \ell = 2 \pi r E = A | \frac{dB}{dt} | = \pi r^2 | \frac{dB}{dt} |\\
+\implies 2 \pi r E = \pi r^2 | \frac{dB}{dt} |\\
+\implies 2 E = r | \frac{dB}{dt}|\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Lens' Law:} There is a current induced in a closed loop if there is a changing magnetic flux\\
+$\varepsilon = \oint \vec{E} \cdot d \vec{s} = - \frac{d \phi_m}{dt}$ (negative is Lens' law)\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\Delta V_L = - L \frac{dI}{dt}$}\\
+$\varepsilon_{coil} = | \frac{d \phi_m}{dt} | = N | \frac{\phi_{per turn}}{dt} |\\$
+def: $L \equiv \frac{\phi_m}{I} \implies \phi_m = L I\\
+\varepsilon_{coil} = | \frac{d \phi_m}{dt} | = L | \frac{dI}{dt}|\\$
+Just like $\Delta V_{res} = - \Delta V_R = - I R,\,\,$ analogously,$\,\, \Delta V_L = - L \frac{dI}{dt}\\
+\therefore \Delta V_L = - L \frac{dI}{dt}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+capacitors store energy in $\vec{E}$ and inductors store their energy in $\vec{B}$, potential difference induces $\varepsilon$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Transformers:} $\frac{V_2}{N_2} = \frac{V_1}{N_1}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$F_{parallel wires} = I_1 \ell B_2 = I_1 \ell \frac{\mu_0 I_2}{2 \pi d} = \frac{\mu_0 \ell I_1 I_2}{2 \pi d}$}\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{\tau} = \vec{\mu} \times \vec{B}$}\\
+draw picture of square wire with $\mu$ aligned on $y,z$ plane
+$\vec{\tau} = \vec{\tau}_L + \vec{\tau}_R = \frac{\vec{d}}{2} \times \vec{F}_L - \frac{\vec{d}}{2} \times \vec{F}_R = \frac{\vec{d}}{2} \times \vec{F}_L + \frac{\vec{d}}{2} \times \vec{F}_L\\
+= \vec{d} \times \vec{F}_L = \vec{d} \times ( I \vec{\ell} \times \vec{B}) = I ( \vec{d} \times \vec{\ell}) \times \vec{B} = I \vec{A} \times \vec{B} = \vec{\mu} \times \vec{B}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\oint \vec{E} \cdot d \vec{s} = | \vec{B} \cdot \frac{d \vec{A}}{dt} + \vec{A} \cdot \frac{d \vec{B}}{dt}|$}\\
+$\varepsilon = \frac{Q_{closed}}{q}\\
+\implies \varepsilon = \frac{q \oint \vec{E} \cdot d \vec{s}}{q} = \oint \vec{E} \cdot d \vec{s}\\$
+\underline{recall:} $\varepsilon = | \frac{d \phi}{dt}|\\
+\implies \oint \vec{E} \cdot d \vec{s} = \varepsilon = | \frac{d \phi}{dt}|\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$U_L = \frac{1}{2} L I^2$}\\
+\underline{recall:} $P_{elec} = I \Delta V_L, \Delta V_L = - L \frac{dI}{dt}\\
+P_{elec} = - \frac{dU}{dt} = I \Delta V_L = - I L \frac{dI}{dt} \implies -- dU = - L \int_0^I I dI\\
+\therefore U_L = - \frac{1}{2} L I^2$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$U_L = \frac{1}{2 \mu_0} A \ell B^2$}\\
+$U_L = \frac{1}{2} L I^2 = \frac{\mu_0 N^2 A}{2 \ell} I^2 = \frac{1}{2 \mu_0} A \ell ( \frac{\mu_0 NI}{\ell})^2\\
+\therefore U_L = \frac{1}{2 \mu_0} A \ell B^2\\
+\therefore u_e = \frac{1}{2 \mu_0} B^2\\$
+using: $\oint \vec{B} d \vec{s} = \mu_0 N I = B \ell \implies B = \frac{\mu_0 NI}{\ell}\\
+L= \frac{\phi}{I} = \frac{N BA}{I} = \frac{\mu_0 N^2 A}{\ell}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$L_{sol} = \frac{\phi_m}{I} = \frac{\mu_0 N^2 A}{\ell}$}\\
+$L= \frac{\phi}{I} (def)\\
+B = \frac{\mu_0 N I}{\ell}\\
+L= \frac{\phi_m}{I} = N \frac{\phi_{per coil}}{dt} =  N \frac{B A}{I}\\
+= \frac{NA}{I} ( \frac{\mu_0 N I}{\ell}) = \frac{\mu_0 N^2 A}{\ell}\\
+\therefore L_{sol} = \frac{\mu_0 N^2 A}{\ell}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$I = - \frac{dQ}{dt} = \omega Q_0 \sin( \omega t) = I_{max} \sin( \omega t)$ (LR - circuits)}\\
+$\Delta V_c + \Delta V_L = 0 \implies \frac{Q}{c} - L \frac{d I}{dt} = 0\\
+d Q_{cap} = - dq \implies I = - \frac{dQ}{dt}\\
+I=-\frac {d Q}{dt}$ only if the current is uncharging the capacitor (i.e. it depends how you set up the diagram)
+$\frac{dI}{dt} = \frac{d}{dt}( - \frac{d Q}{dt}) = - \frac{ d^2 Q}{dt^2} \implies \frac{Q}{C} + L \frac{d^2 Q}{dt^2} = 0 \implies \frac{d^2 Q}{dt^2} = - \frac{1}{LC} Q\\$
+\underline{recall:} $\frac{d^2 x}{dt^2} = - \frac{k}{m} x,\,\, \omega = \sqrt{ \frac{k}{m}}\\
+\implies Q(t) = Q \cos \omega t,\,\, \omega = \sqrt{\frac{1}{LC}}\\
+\therefore I = - \frac{dQ}{dt} = \omega Q_0 \sin (\omega t) = I_{max} \sin ( \omega t)$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$I= I_0 e^{-t/\tau},\,\, \tau = \frac{L}{R}$}\\
+$\Delta V_{res} + \Delta V_L = 0\\
+- I R - L \frac{dI}{dt} = 0\\
+\frac{dI}{I} = - \frac{R}{L} dt = \- \frac{dt}{(L/R)}\\
+\implies \int_{I_0}^I \frac{1}{I} dI = - \frac{1}{(L/R)} \int_0^t dt\\
+\implies \ln \frac{I}{I_0} = - \frac{1}{(L/R)} t\\
+\therefore I = I_0 e^{-t/\tau}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{a}_{CA} = \vec{a}_{CB}$}\\
+$\vec{r}_{CA} = \vec{r}_{BA} + \vec{r}_{CB}\\
+\implies \vec{v}_{CA} = \vec{v}_{BA} + \vec{v}_{CB}\\
+\therefore \vec{a}_{CA} = \vec{a}_{CB}\\
+\therefore \vec{F}_{CA} = \vec{F}_{CB}$
+
+
+frame $A$ and frame $B$ (people) $C$ frame (charge) suppose $B$ is traveling with the same velocity as $C$ and $\vec{B}_A \neq 0\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{E}_B = \vec{v}_{BA} \times \vec{B}_A$}\\
+\underline{assume:} $\vec{B}_A \neq 0;\,\, \vec{E}_A = 0;\,\, \vec{v}_{CA} = \vec{v}_{BA}\\
+\vec{F}_A = \vec{F}_B;\,\, \vec{F}_A = q \vec{v}_{CA} \times \vec{B}_A;\,\, \vec{F}_B = q \vec{E}_B;\,\, \vec{v}_{CA} = \vec{v}_{BA}\\
+\implies q \vec{E}_B = q \vec{v}_{BA} \times \vec{B}_A\\
+\therefore \vec{E}_B = \vec{v}_{BA} \times \vec{B}_A\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+Now suppose more generally that there is an electric field and magnetic field in frame A\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{E}_B = \vec{E}_A + \vec{v}_{BA} \times \vec{B}_A$}\\
+\underline{Assume:} $\vec{B}_A \neq 0;\,\, \vec{E}_A \neq 0;\,\, \vec{v}_{CA}= \vec{v}_{BA}\\
+\vec{F}_A = \vec{F}_B;\,\, \vec{F}_A = q \vec{E}_A + q \vec{v}_{CA} \times \vec{B}_A = q \vec{E}_A + q \vec{v}_{BA} \times \vec{B}_A\\
+\vec{F}_B = q \vec{E}_B\\
+\implies q \vec{E}_B = q \vec{E}_A + q \vec{v}_{BA} \times \vec{B}_A\\
+\therefore \vec{E}_B = \vec{E}_A + \vec{v}_{BA} \times \vec{B}_A\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+Now suppose A travels with $C,\,\, \vec{v}_{AB}=\vec{v}_{CB}$, and the only field is caused by the charge\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{B}_B = - \mu_0 \epsilon_0 \vec{v}_{BA} \times \vec{E}_A$}\\
+\underline{assume:} $\vec{B}_A= 0;\,\, \vec{E}_A \neq 0;\,\, \vec{v}_{CA} = 0 \implies \vec{v}_{CB} = - \vec{v}_{BA}\\$
+\underline{recall:} $\vec{v}_{BA} + \vec{v}_{CB} = \vec{v}_{CA} \implies \vec{v}_{CB} == - \vec{v}_{BA}\\
+\vec{E}_A = \capk \frac{q}{r^2} \hat{r};\,\, \vec{B}_B = \frac{\mu_0}{4 \pi} \frac{q \vec{v}_{CB} \times \hat{r}}{r^2} = - \frac{\mu_0}{4 \pi} \frac{q \vec{v}_{BA} \times \hat{r}}{r^2}\\
+\implies \vec{B}_B = - \mu_0 \epsilon_0 \vec{v}_{BA} \times ( \capk \frac{q \hat{r}}{r^2}) = - \mu_0 \epsilon_0 \vec{v}_{BA} \times \vec{E}_A$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+Same set up but now $\vec{B}_A \neq 0,\,\, A$ generates background $B$ field, and $\vec{v}_{CA} \neq 0$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{B}_B = \vec{B}_A - \mu_0 \epsilon_0 \vec{v}_{BA} \times \vec{E}_A$} (General transformation)\\
+\underline{assume:} $\vec{B}_A \neq 0;\,\, \vec{v}_{CA}= \vec{v}_{BA} + \vec{v}_{CB} \implies \vec{v}_{CB} = \vec{v}_{CA} - \vec{v}_{BA}\\
+\vec{B}_B = \frac{\mu_0}{4 \pi} \frac{q \vec{v}_{CB} \times \hat{r}}{r^2} = \frac{\mu_0}{4 \pi} \frac{q(\vec{v}_{CA} - \vec{v}_{BA}) \times \hat{r}}{r^2}\\
+= \frac{\mu_0}{4 \pi} \frac{q \vec{v}_{CA} \times \hat{r}}{r^2} - \frac{\mu_0}{4 \pi} q \frac{\vec{v}_{BA} \times \hat{r}}{r^2} \\
+= \vec{B}_A - \mu_0 \epsilon_0 \vec{v}_{BA} \times ( \capk \frac{q \hat{r}}{r^2}) = \vec{B}_A - \mu_0 \epsilon_0 \vec{v}_{BA} \times \vec{E}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+Assume two charged particles travel with $\vec{v}_{CA}=\vec{v}_{BA} = v_{CA} \hat{i}$ and are separated by $\vec{r} = r \hat{j}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{E}_B = \capk \frac{q_1}{r^2}(1- \frac{v_{BA}^2}{c^2})\hat{j},\,\,$ should be $\vec{E}_B = \capk \frac{q_1}{r^2} \hat{j}$}\\
+$\vec{E}_A = \capk \frac{q_1}{r^2} \hat{j};\,\, \vec{B}_A = \frac{\mu_0}{4 \pi} \frac{q_1 v_{CA}}{r^2} \hat{k}\\
+\hat{r}= \hat{j};\,\, \vec{v} \times \hat{r} = v (\hat{i} \times \hat{j}) = v \hat{k}\\
+\underline{recall"} \vec{E}_B = \vec{E}_A + \vec{v}_{BA} \times \vec{B}_A;\,\,, \vec{B}_B = \vec{B}_A - \mu_0 \epsilon_0 \vec{v}_{BA} \times \vec{E}_A\\
+\implies \vec{B}_B = \vec{B}_A - \frac{1}{c^2} \vec{v}_{BA} \times \vec{E}_A = \frac{\mu_0}{4 \pi} \frac{q_1 v_{CA}}{r^2} \hat{k} - \frac{1}{c^2}(v_{CA} \hat{i} \times \capk \frac{q_1}{r^2} \hat{j})\\
+= \frac{\mu_0}{4 \pi} \frac{q_1 v_{CA}}{r^2} \hat{k} - \frac{1}{c^2} v_{CA} \capk \frac{q_1}{r^2} \hat{k}\\
+= \frac{\mu_0}{4 \pi} \frac{q_1 v_{CA}}{r^2}(1- \frac{1}{\mu_0 \epsilon_0 c^2} \hat{k};\,\, \frac{1}{\mu_0 \epsilon_0} = c^2\\
+\implies \vec{B}_B = 0\\
+\vec{E}_B = \vec{E}_A + \vec{v}_{BA} \times \vec{B}_A = \capk \frac{q_1}{r^2} \hat{j} + v_{BA} \hat{i} \times \frac{\mu_0}{4 \pi} \frac{1_1 v_{CA}}{r^2} \hat{k}\\
+\implies \vec{E}_B = \capk \frac{q_1}{r^2}(1- \epsilon_0 \mu_0 v_{BA}^2)\\
+\vec{E}_B = \capk \frac{q_1}{r^2} \hat{j}(should be this)\\$
+We will need special relativity to solve this contradiction\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+Imagine a square wire moving to the right with velocity $\vec{v}$ through a magnetic field $\vec{B}_A = \vec{B} but \vec{E}_A = 0$ and frame B moves with velocity $\vec{v}_{BA} = \vec{v}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\oint \vec{B} \cdot d \vec{s} = \mu_0 ( I_{thr} + I_{disp}) = \mu_0 ( I_{thr} + \epsilon_0 \frac{d \phi_e}{dt})$}\\
+\underline{recall:} $\oint \vec{B} \cdot d \vec{s} = \mu_0 I_{thru}; \phi_e = \oint \vec{E} \cdot d \vec{A} = \frac{q_{enc}}{\epsilon_0}\\
+\phi_e = \oint \vec{E} \cdot d \vec{A} = EA = \frac{Q}{\epsilon_0} \implies E_{cap} = \frac{Q}{\epsilon A} \implies \phi_e = EA = \frac{QA}{\epsilon_0 A} = \frac{Q}{\epsilon_0}\\
+\implies \frac{d \phi_e}{dt} = \frac{d}{dt} (\frac{Q}{\epsilon_0}) -= \frac{1}{\epsilon_0} \frac{dQ}{dt} = \frac{1}{\epsilon_0} I_{disp } \implies I_{disp} = \epsilon_0 \frac{d \phi_e}{dt}\\
+\underline{Note:} I_{disp} \propto \frac{d \phi_e}{dt}; I_{tot} = I_{thr} + I_{disp}\\
+\therefore \oint \vec{B} \cdot d \vec{s} = \mu_0 I_{tot} = \mu_0 (I_{thr} + I_{disp}) = \mu_0(I_{thr} + \epsilon_0 \frac{d \phi_e}{dt})\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\frac{\partial E_y}{\partial x} = - \frac{\partial B_z}{\partial t}$}\\
+\underline{recall:} $\epsilon = - \frac{d \phi_m}{dt} = \oint \vec{E} \cdot d \vec{s} (Faraday's Law), E_y(x,t);\,\, B_z(x,t)\\
+\phi_m = \vec{B}_z \cdot \vec{A}_{rect} = B_z A_{rect} = B_z \Delta x \Delta y = B_z \Delta x h = B_z h dx\\
+\implies \frac{d \phi_m}{dt} = \frac{d}{dt} (B_z h dx) = \frac{\partial B_z}{\partial t} h dx\\
+\oint \vec{E} \cdot d \vec{s} = \int_{right} \vec{E} \cdot d \vec{s} + \int_{top} \vec{E} \cdot d \vec{s} + \int_{left} \vec{E} \cdot d \vec{s} + \int_{bottom} \vec{E} \cdot d \vec{s}\\
+\implies \oint \vec{E} \cdot d \vec{s} = E_y (x+ \Delta x) h + 0 - E_y (x) h + 0\\
+= [ E_y (x + \Delta x) - E_y (x) ] h \frac{\Delta x}{\Delta x}\\
+\implies \oint \vec{E} \cdot d \vec{s} = \frac{\partial E_y}{\partial x} h \Delta x = \frac{\partial E_y}{\partial x} h dx 
+\implies \oint \vec{E} \cdot d \vec{s} = j\frac{\partial E_y}{\partial x} h dx = - \frac{d \phi_m}{dt} = - \frac{\partial B_z}{\partial t} h dx\\
+\therefore \frac{\partial E_y}{\partial x} = - \frac{\partial B_z}{\partial t}$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\frac{\partial B_z}{\partial x} = - \epsilon_0 \mu_0 \frac{\partial E_y}{\partial t}$}\\
+\underline{recall:} $\oint \vec{B} \cdot d \vec{s} = \mu_0 (I_{thr} + I_{disp} ) = \mu_0 (I_{thr} + \epsilon_0 \frac{d \phi_e}{dt})\\
+\phi_e = \vec{E}_y \cdot \vec{A}_{rect} = E_y A_{rect} = E_y \ell \Delta x\\
+\implies \frac{d \phi_e}{dt} = \frac{\partial E_y}{\partial t} \ell \Delta x\\
+\oint \vec{B} \cdot d \vec{s} = \int_{left} \vec{B} \cdot d \vec{s} + \int_{right} \vec{B} \cdot d \vec{s} + \int_{top} \vec{B} \cdot d \vec{s} + \int_{bottom} \vec{B} \cdot d \vec{s}\\
+= B_z(x) \ell - B_z (x+ \Delta x) \ell\\
+\oint \vec{B} \cdot d \vec{s} = \mu_0 (I_{thr} + I_{disp}) = \mu_0 \epsilon_0 \frac{d \phi_e}{dt}\\
+\implies - (B_z(x+\Delta x) - B_z (x)) \ell = \mu_0 \epsilon_0 \frac{\partial E_y}{\partial t} \ell \Delta x\\
+\therefore \frac{\partial B_z}{\partial x} = - \epsilon_0 \mu_0 \frac{\partial E_y}{\partial t}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\frac{\partial^2 E_y}{\partial t^2} = \frac{1}{\epsilon_0 \mu_0} \frac{\partial^2 E_y}{\partial x^2}$} (Wave equation for EM waves)\\
+\underline{recall:} $\frac{\partial^2 D}{\partial t^2} = v^2 \frac{\partial^2 D}{\partial x^2};\,\, \frac{\partial B_z}{\partial x} = - \epsilon_0 \mu_0 \frac{\partial E_y}{\partial t};\,\, \frac{\partial E_y}{\partial x} = - \frac{\partial B_z}{\partial t}\\
+\implies \frac{\partial^2 B_z}{\partial t \partial x} = - \epsilon_0 \mu_0 \frac{\partial^2 E_y}{\partial t^2};\,\, - \frac{\partial^2 E_y}{\partial x^2} = \frac{\partial^2 B_z}{\partial x \partial t}\\
+\implies - \epsilon_0 \mu_0 \frac{\partial^2 E_y}{\partial t^2} = \frac{\partial^2 B_z}{\partial t \partial x} = - \frac{\partial^2 E_y}{\partial x^2}\\
+\therefore \frac{\partial^2 E_y}{\partial t^2} = \frac{1}{\epsilon_0 \mu_0} \frac{\partial^2 E_y}{\partial x^2};\,\, c = \frac{1}{\sqrt{\epsilon_0 \mu_0}}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\frac{\partial^2 B_z}{\partial t^2} = \frac{1}{\epsilon_0 \mu_0} \frac{\partial^2 B_z}{\partial x^2}$}\\
+\underline{recall:} $\frac{\partial E_y}{\partial t} = - \frac{\partial B_z}{\partial t};\,\, \frac{\partial B_z}{\partial x} = - \epsilon_0 \mu_0 \frac{\partial E_y}{\partial t}\\
+\frac{\partial E_y}{\partial x} = - \frac{\partial B_z}{j\partial t} \implies \frac{\partial^2 E_y}{\partial t \partial x} = - \frac{\partial^2 B_z}{\partial t^2}\\
+\frac{\partial B_z}{\partial x} = - \epsilon_0 \mu_0 \frac{\partial E_y}{\partial t} \implies \frac{\partial^2 B_z}{\partial x^2} = - \epsilon_0 \mu_0 \frac{\partial^2 E_y}{\partial x \partial t}\\
+\therefore \frac{\partial^2 B_z}{\partial t^2} = \frac{1}{\epsilon_0 \mu_0} \frac{\partial^2 B_z}{\partial x^2}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$E_y(x,t) = c B_z(x,t)$}\\
+$E_y = E_0 \sin (kx- \omega t) = E_0 \sin[ 2 \pi ( \frac{x}{\lambda} - f t) ]\\
+B_z = B_0 \sin(kx - \omega t) = B_0 \sin [ 2 \pi ( \frac{x}{\lambda} - f t)]\\
+\underline{recall:} \frac{\partial E_y}{\partial x} = - \frac{\partial B_z}{\partial t}\\
+\implies \frac{\partial E_y}{\partial x} = \frac{2 \pi E_0}{\lambda} \cos [ 2 \pi ( \frac{x}{\lambda} - f t) ] = - \frac{\partial B_z}{\partial t} = 2 \pi f B_0 \cos [ 2 \pi ( \frac{x}{\lambda} - f t) ]\\
+\implies E_0 \cos [ k x =- \omega t ] = \lambda f B_0 \cos [ kx - \omega t ]\\
+\therefore E_y(x,t) = c B_z(x,t)\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$- \frac{\partial u}{\partial t} = \nabla \cdot \vec{S} + \vec{J} \cdot \vec{E}$} (advanced, $\vec{J}$ is free current)\\
+$U$ is the electromagnetic energy stored within a volume
+$U = \int u d V \implies \frac{\partial U}{\partial t} = \int \frac{\partial u}{\partial t} d V\\$
+\underline{recall:} flux through surface $= \oiint \vec{S} \cdot d \vec{A} = \int \nabla \cdot \vec{S} d V\\$
+\underline{recall:} $\vec{F} = q (\vec{E} + \vec{v} \times \vec{B}) \implies \vec{f} = \rho(\vec{E} + \vec{v} \times \vec{B})$ (force density)\\
+$= \rho \vec{E} + \vec{J} \times \vec{B}\\
+\implies \vec{F} = \int \vec{f} d V = \int \rho ( \vec{E} + \vec{v} \times \vec{B}) d V\\$
+how energy changes inside $= \vec{F} \cdot \frac{d \vec{r}}{dt} = \vec{F} \cdot \vec{v}\\
+= \int [ \rho (\vec{E} \cdot \vec{v} + ( \vec{v} \times \vec{B}) \cdot \vec{v}] d V\\$
+\underline{Note:} $\vec{v} \cdot ( \vec{v} \times \vec{B}) = \vec{v} \cdot (\vec{B} \times \vec{v}) \implies 2 \vec{v} \times (\vec{v} \times \vec{B}) = 0 \implies \vec{v} \cdot (\vec{v} \times \vec{B}) = 0\\
+\implies \frac{\partial U_{inside}}{\partial t} = \int \vec{E} \cdot \vec{J} d V\\
+\implies \frac{\partial U}{\partial t} = \frac{\partial U_{surface}}{\partial t} + \frac{\partial U_{inside}}{\partial t}\\
+= - \int ( \nabla \cdot \vec{S}) d V - \int \vec{E} \cdot \vec{J} d V = \int \frac{\partial u}{\partial t} d V\\
+\therefore - \frac{\partial u}{\partial t} = \nabla \cdot \vec{S} + \vec{E} \cdot \vec{J}$\\
+The last term is the work done by the fields on the charges, so if it is positive, it gives energy to the charges and the field itself loses energy, hence the negative for this term, the negative for $\nabla \cdot \vec{S}$ is a bit more obvious since it represents the electromagnetic energy leaving the volume.\\
+"The Poynting theorem should read rate of change of energy in the fields = negative of work done by the fields on the charged particles minus the Poynting vector term."\\
+https://www.sjsu.edu/faculty/watkins/poyntingth.htm
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\nabla \times \vec{H} = \vec{J} + \frac{\partial \vec{D}}{\partial t};\,\, \vec{D} = \epsilon_0 \vec{E};\,\, \vec{H} = \frac{1}{\mu_0} \vec{B}$}\\
+$\oint \vec{B} \cdot d \vec{s} = \int ( \nabla \times \vec{B}) \cdot d \vec{a} = \mu_0(I_{thr} + I_{disp})\\
+= \mu_0 ( \int \vec{J} \cdot d \vec{a} + \epsilon_0 \frac{d}{dt} \int \vec{E} \cdot d \vec{a})\\
+\implies \frac{1}{\mu_0} \int (\nabla \times \vec{B}) \cdot d \vec{a} = \int \nabla \times \vec{H} \cdot d \vec{a} = \int \vec{J} \cdot d \vec{a} + \int \frac{\partial \vec{D}}{\partial t} \cdot d \vec{a}\\
+\therefore \nabla \times \vec{H} = \vec{J} + \frac{\partial \vec{D}}{\partial t}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{S} = \vec{E} \times \vec{H};\,\, \vec{H} = \frac{1}{\mu_0} \vec{B}$ (free space) $\implies \vec{S} = \frac{1}{\mu_0} \vec{E} \times \vec{B}$}\\
+\underline{recall:} $u = \frac{1}{2} (\epsilon_0 \vec{E} \cdot \vec{E} + \frac{1}{\mu_0} \vec{B} \cdot \vec{B})\\
+\implies \frac{\partial u}{\partial t} = \frac{1}{2}(\epsilon_0 2 \vec{E} \cdot \frac{\partial \vec{E}}{\partial t} + \frac{1}{\mu_0} 2 \vec{B} \cdot \frac{\partial \vec{B}}{\partial t})\\
+= \vec{E} \cdot \frac{\partial \vec{D}}{\partial t} + \vec{H} \cdot \frac{\partial \vec{B}}{\partial t}\\$
+\underline{recall:}$ \frac{\partial \vec{B}}{\partial t} = - \nabla \times \vec{E} \implies \vec{H} \cdot \frac{\partial \vec{B}}{\partial t} = - \vec{H} \cdot ( \nabla \times \vec{E})\\$
+\underline{recall:} $\nabla \times \vec{H} = \vec{J} + \frac{\partial \vec{D}}{\partial t} \implies \vec{E} \cdot \frac{\partial \vec{D}}{\partial t} = \vec{E} \cdot ( \nabla \times \vec{H} - \vec{J})\\$
+\underline{recall:} $- \nabla \cdot \vec{S} = \frac{\partial u}{\partial t} + \vec{E} \cdot \vec{J}\\
+\frac{\partial u}{\partial t} = \vec{E} \cdot \frac{\partial \vec{D}}{\partial t} + \vec{H} \cdot \frac{\partial \vec{B}}{\partial t}\\
+= \vec{E} \cdot (\nabla \times \vec{H} - \vec{J}) - \vec{H} \cdot ( \nabla \times \vec{E})\\
+= \vec{E} \cdot (\nabla \times \vec{H}) - \vec{E} \cdot \vec{J} - \vec{H} \cdot (\nabla \times \vec{E})\\
+\implies - \nabla \cdot \vec{S} = \vec{E} \cdot(\nabla \times \vec{H}) - \vec{H} \cdot (\nabla \times \vec{E})\\$
+\underline{recall:} $\nabla \cdot (\vec{E} \times \vec{H}) = \vec{H} \cdot (\nabla \times \vec{E}) - \vec{E} \cdot (\nabla \times \vec{H})\\
+\implies - \nabla \cdot \vec{S} = - \nabla \cdot (\vec{E} \times \vec{H})]\\
+\therefore \vec{S} = \vec{E} \times \vec{H}$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+$\star \star$\\
+\item \underline{$i_R = I_R \cos \omega t $} ( AC) (resistor circuit)\\
+$v_R = i_r R\\
+\varepsilon - v_R = 0\\
+\implies \varepsilon = v_R but \varepsilon = \varepsilon_0 \cos \omega t\\
+\implies i_R = \frac{v_R}{R} = \frac{V_R}{R} \cos \omega t = I_R \cos \omega t\\
+i_R, v_R$ and $\varepsilon_0$ are parallel on phase diagram
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+
+
+
+
+$\vec{S} \equiv \frac{1}{\mu_0} \vec{E} \times \vec{B},\,\, S = \frac{E B}{\mu_0} = \frac{E^2}{c \mu_0} = c \epsilon_0 E^2 \implies S_{max} = \frac{E_0^2}{c \mu_0}$ \\
+1. $\vec{S}$(poynting vecotr) points in direction of $\vec{v}_{em}$\\
+2 $| \vec{S}|$ measures the rate of energy transfer per unit area of wave $\frac{W}{m^2}$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$I= \frac{P}{A} = S_{avg} = \frac{1}{2 c \mu_0} E_0^2 = \frac{c \epsilon_0}{2} E_0^2$}\\
+\underline{Note:} $E_{avg}^2 = \frac{E_0^2}{2} = (E^2)_{avg}\\$
+\underline{recall:} $I= \frac{P_{source}}{4 \pi r^2}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\Delta p = \frac{Energy absorbed}{c}$}\\
+\underline{recall:} $E^2 = E_0^2 + (pc)^2,\,\, E_0 = 0$ (photon)\\
+$\implies E= pc \implies \Delta E = \Delta (pc) = c \Delta p\\
+\implies \Delta p = \frac{E}{c} \\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$p_{rad} = \frac{I}{c}$} (radiation pressure)\\
+\underline{recall:} $\Delta p = \frac{\Delta E}{c}\\
+\implies F = \frac{\Delta p}{\Delta t} = \frac{1}{c} \frac{\Delta E}{\Delta t} = \frac{p}{c}$ (Power)\\
+$\implies p_{rad} = \frac{F}{A} = \frac{P}{A} \frac{1}{c} = \frac{I}{c}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$I_{transmitted} = I_0 \cos^2 \theta$} (incident light polarized)\\
+$\vec{E}_{inc} = E_{\perp} \hat{i} + E_{\parallel} \hat{j}\\
+E_{trans} = E_{\parallel} = E_0 \cos \theta\\$
+\underline{recall:} $I \propto E^2 \implies I = k E^2 \implies \frac{I}{I_0} = \frac{E^2}{E_0^2} = \cos^2 \theta\\
+\therefore I = E_0^2 \cos^2 \theta\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$I_{transmitted} = \frac{1}{2} I_0$}\\
+We assume there is equal amount of both polarizations going through the filter\\
+$I_{trans} = \langle I_0 \cos^2 \theta \rangle$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$i_C = \omega C V_C \cos (\omega t + \frac{\pi}{2})$} (AC) (Capacitor circuit)\\
+$v_C = V_C \cos \omega t\\
+\underline{recall:} q = C V_C\\
+\implies q = C V_c \cos \omega t\\
+\implies i_C = \frac{dq}{dt} = - C V_C \sin \omega t = C V_C \cos (\omega t + \frac{\pi}{2})\\
+\therefore$ current leads capacitor voltage by $\frac{\pi}{2}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{definition:} $X_c \equiv \frac{1}{\omega C} \implies I_C = \frac{V_C}{X_C} \implies V_C = I_C X_C\\
+X_C$ is reactance and is similar to resistance except $v_c \neq i_c X_C$ since they are out of phase\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$V_C = I X_C =\frac{ \varepsilon_0 X_C}{\sqrt{R^2 + X_C^2}}$} (RC circuits)\\
+$\varepsilon_0^2 = V_R^2 + V_C^2 = (IR)^2 + (I X_C)^2\\
+= (R^2 + X_C^2)I^2\\
+\implies I = \frac{\varepsilon_0}{\sqrt{R^2 + X_C^2}}\\
+\therefore V_R = I R = \frac{\varepsilon_0 R}{\sqrt{R^2 + X_C^2}}\\
+\therefore V_C = I X_C = \frac{\varepsilon_0 X_C}{\sqrt{R^2 + X_C^2}} = \frac{\varepsilon_0/\omega c}{\sqrt{R^2 + (1/\omega c)^2}}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+
+
+
+
+\underline{Note:} $V_C = V_R \implies \omega_C = \frac{1}{RC}$ (Cross over frequency)
+
+\item \underline{$i_C = \omega C v_C \cos (\omega t + \frac{\pi}{2})$}(AC) (capacitor circuit)\
+$v_C = \varepsilon = \varepsilon_0 \cos \omega t = v_C \cos \omega t\\$
+\underline{recall:} $q =C \Delta V\\
+\implies q = C V_C = C v_C \cos \omega t \\
+\implies i_C = \frac{dq}{dt} = - C v_C \omega \sin \omega t = C \omega v_C \cos (\omega t + \frac{\pi}{2})\\
+\implies I_C = C \omega V_C \implies V_C = X_C I_C\\$
+\underline{conclusion:} current leads capacitor voltage by $\pi/2$, or comparing with the resistor current and its voltage, the current in the capacitor leads the resistor voltage by  $\pi/2$, which means in an RC circuit the voltage on the capacitor lags the current by $\pi/2$\\
+\\
+\underline{Note:} each circuit element must have the same current through it so this is what stays the same for each element, however each element has a different voltage so this explains why things are done in this part.
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$i_L = \frac{v_L}{\omega L} \cos(\omega t - \frac{\i}{2} ) = I_L \cos (\omega t - \frac{\i}{2})$}(inductor circuit)\\
+\underline{recall:} $V_L = L \frac{d i_L}{dt}\\
+v_L = \varepsilon = \varepsilon_0 \cos \omega t = V_L \cos \omega t\\
+\implies d i_L = \int \frac{v_L}{L} dt = \int \frac{V_L}{L} \cos \omega t dt = \frac{V_L}{L \omega } \sin ( \omega t)\\
+= \frac{V_L}{L \omega} \cos (\omega t - \frac{\pi}{2})\\$
+\underline{conclusion:} inductor lags inductor voltage by $\pi/2$, or comparing with the resistor current and its voltage, the current in the capacitor leads the resistor voltage by  $\pi/2$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{definition:} $X_L \equiv \omega L$ (inductive resonance)\\
+$\implies V_L = I_L X_L\\
+\underline{Note:} i- I_R = i_L = i_C;\,\, \varepsilon = V_R + v_L+ V_c\\$
+
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$I = \frac{\varepsilon_0}{\sqrt{R^2 + (X_L - X_C)^2}} = \frac{\varepsilon_0}{z};\,\, z= \frac{1}{\sqrt{R^2 + (X_L-X_c)^2}}$}\\
+$i= I \cos (\omega t - \phi)$ (don't understand)\\
+$\phi$ is the angle between $\varepsilon_0$ and $V_r$ on phase diagram
+$\varepsilon_0^2 = V_R^2 +(V_L - V_C)^2\\
+\implies \varepsilon_0^2 = V_R^2 + (V_L - V_C)^2\\
+\implies \varepsilon_0^2 = [ R^2 + (X_L - X_C)^2] I^2\\
+\therefore I = \frac{\varepsilon_0}{\sqrt{R^2 + ( X_L - X_C)^2}}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\phi = \tan^{-1}( \frac{X_L - X_C}{X_R})$}\\
+$\tan \phi = \frac{V_L - V_C}{V_R} = \frac{(X_L - X_C)I}{RI}\\
+\therefore \phi = \tan^{-1} (\frac{X_L - X_C}{R})\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\omega_0 = \frac{1}{\sqrt{LC}}$} (resonance frequency)\\
+max current occurs when $X_L = X_C\\
+\implies \omega L = \frac{1}{\omega C}\\
+\therefore \omega_0 = \frac{1}{\sqrt{LC}} \implies I_{max} = \frac{\epsilon_0}{R}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$P_R = \frac{1}{2} I_R^2 R = (I_{rms})^2 R$} (average power loss in resistors)\\
+\underline{recall:} $P_R = i_R v_R = i_R^2 R;\,\, i_R = I_R \cos \omega t\\
+\implies P_R = I_R^2 R \cos^2 \omega t\\
+\implies P_R = I_R^2 R (\frac{1}{2} + \frac{1}{2} \cos 2 \omega t)\\
+\implies \langle \frac{1}{2} \cos 2 \omega t \rangle = 0\\
+\therefore (P_R)_{avg} = \frac{1}{2} I_R^2 R = I_{RMS}^2 R$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$P=I \varepsilon$} (Power of EMF)
+$P= \frac{dU}{dt} = \frac{d(q \Delta V_{bat})}{dt} = \Delta V \frac{dq}{dt} = I \Delta V = I \varepsilon\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+
+\section*{\underline{Special Relativity}}
+\item \underline{$\Delta t = \frac{\Delta \tau}{\sqrt{1-(v^2/c^2)}}$}\\
+$v = \frac{\Delta x}{\Delta t'} = \frac{2h}{\Delta t'}=c \implies \Delta t' = \frac{2h}{c} \implies \frac{c \Delta t'}{2} = h\\
+\frac{1}{2} c \Delta t = \sqrt{\frac{v^2 \Delta t^2}{4} + h^2} \implies \frac{1}{4} c^2 \Delta t^2 = \frac{1}{4} v^2 \Delta t^2 + h^2\\
+\implies \frac{1}{2} \sqrt{c^2 - v^2} \Delta t = h = \frac{c \Delta t'}{2}\\
+\implies \sqrt{1- \frac{v^2}{c^2}} \Delta t = \Delta t' \equiv \Delta \tau\\
+\implies \Delta t = \frac{\Delta \tau}{\sqrt{1- \frac{v^2}{c^2}}}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\ell = \frac{\ell_0}{\gamma}$}\\
+$v = \frac{\ell_0}{\Delta t} = \frac{\ell}{\Delta \tau} \implies \Delta \tau \gamma = \Delta t\\
+\implies \frac{\ell_0}{\gamma \Delta \tau} = \frac{\ell}{\Delta \tau} \implies \ell = \frac{\ell_0}{\gamma}$
+$\ell_0$ is measured by the spaceship that sees both planets at rest
+$\Delta \tau$ is measured by the spaceship that travels from one planet to the other
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$s^2 = c^2 ( \Delta t)^2 - (\Delta x)^2$}\\
+$h^2 +(\frac{1}{2} v \Delta t)^2 = h^2 + ( \frac{1}{2} \Delta x)^2 = ( \frac{1}{2} c \Delta t)^2\\
+\implies h^2 = ( \frac{1}{2} c \Delta t)^2 - ( \frac{1}{2} \Delta)^2\\
+\implies (2h)^2 = (c \Delta t)^2 - \Delta x^2 \equiv \Delta s^2\\$
+(this is a Lorentz invariant quantity called the spacetime interval)\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$E^2 = E_0^2 + (pc)^2$}\\
+\underline{Aside:} proper time $\implies \Delta x = 0 \implies s^2 = (c \Delta \tau)^2 \implies \Delta \tau$ invariant\\
+\underline{recall:} $s^2 = (c \Delta t)^2 - \Delta x^2;\,\, p = m \frac{\Delta x}{\Delta \tau}\\
+\implies (\frac{m c \Delta t \Delta \tau}{m \delta \tau})^2 - ( \frac{m \Delta x \Delta \tau}{m \Delta \tau})^2 = s^2\\
+\implies ( \frac{m c \Delta t}{\Delta \tau})^2 - ( \frac{m \Delta x \Delta \tau}{m \Delta \tau})^2 = s^2\\
+\implies ( \frac{m c \Delta t}{\Delta \tau})^2 - ( \frac{m \Delta x}{\Delta \tau})^2 = \frac{s^2 m^2}{\Delta \tau^2} =$ invariance\\
+$\implies ( \frac{m c^2 \Delta t}{\Delta \tau})^2 - ( \frac{m \Delta x}{\Delta \tau} c)^2 =$ invariant\\
+\underline{recall:} $\Delta t = \gamma \Delta \tau\\
+\implies ( \gamma m c^2)^2 - (pc)^2 = (m c^2)^2=E_0^2\\
+\therefore E^2 = E_0^2 + (pc)^2\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$KE = m c^2 (\gamma_p -1) = E_0 (\gamma_p - 1)$}\\
+\underline{recall:} $W = \Delta K = \int_{s_i}^{s_f} F ds = \int_{v_0}^v p dv (v_0 = 0$ in this case; $W= K$)\\
+$\implies F = \frac{dp}{dt};\,\, p = \gamma_p m v (\gamma_p$ is for the particle not reference frame)\\
+$\implies W = \int \frac{dp}{dt} ds = \int \frac{ds}{dt} dp = \int v dp = \int d(vp) - \int p dv\\
+= vp - \int p d v\\
+\implies \gamma_p m v^2 - \int \gamma_p mv dv = K\\
+\int \gamma_p m v d v = m \int \frac{v}{\sqrt{1-(\frac{v}{c})^2}} dv,\,\, u = 1 - (\frac{v}{c})^2 \implies du = - \frac{2v}{c^2} dv\\
+\implies \int \gamma_p m v dv = - \frac{m c^2}{2} \int u^{-1/2} du\\
+= - \frac{m c^2}{2 2(u^{1/2}} = - m c^2 ( \sqrt{1- (\frac{v}{c})^2}|_0^v = - m c^2 \sqrt{1- \frac{v^2}{c^2}} + m c^2\\
+\implies K = \gamma m v^2 - m c^2 + m c^2 \sqrt{1- \frac{v^2}{c^2}}\\
+= \frac {m v^2}{\sqrt{1- \frac{v^2}{c^2}}} - \frac{\sqrt{1 - \frac{v^2}{c^2}} mc^2}{\sqrt{1-\frac{v^2}{c^2}}} + \frac{mc^2(1- \frac{v^2}{c^2)}}{\sqrt{1- \frac{v^2}{c^2}}}\\= (mv^2 - mc^2/\gamma_p + mc^2 - mv^2)\gamma_p = \gamma_p mc^2 - mc^2 = E_0(\gamma_p-1)$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\bar{t} = \frac{t}{\sqrt{1-v^2}} - \frac{vx}{\sqrt{1-v^2}},\,\, \bar{x} = \frac{- vt}{\sqrt{1-v^2}} + \frac{x}{\sqrt{1-v^2}},\,\,c=1$}\\
+Assume, $x' = Ax+Bt,\,\, t' = \alpha x + D t\\
+x=vt,\,\, x'=0$ (object at rest in $x'$)\\
+use only first equation\\
+$\implies B = - A v\\
+x' = A(x-vt),\,\, t' = \alpha x + D t\\
+x'=-vt',\,\, x=0\\
+\implies A = D\\
+x' = (x-vt),\,\, t' = \alpha x + A t\\
+x'= c t',\,\, x= ct\\
+\implies \alpha = - \frac{v}{c^2} A\\
+x'= A(x-vt),\,\, t' = A(t- \frac{v}{c^2} x)\\
+x'^2 - c^2 t'^2 = x^2 - c^2 t^2\\
+A^2(x^2 - c^2 t^2 + v^2 t^2 - \frac{v^2}{c^2} x^2) = x^2 - c^2 t^2\\
+\implies A^2[x^2(1-\frac{v^2}{c^2}) + t^2(v^2 - c^2)] = x^2 - c^2 t^2\\
+\implies A^2 [x^2(1- \frac{v^2}{c^2}) - c^2 t^2(1-\frac{v^2}{c^2})] = x^2 - c^2 t^2\\
+A^2(1- \frac{v^2}{c^2}) = 1 \implies A = \gamma = \frac{1}{\sqrt{1-\frac{v^2}{c^2}}}\\
+x'=\gamma(x-vt),\,\, t' = \gamma(t-\frac{v}{c^2}x)$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$x' = \gamma(x-vt)$}\\
+$x'+ vt = x \implies x' = x-vt \implies x' = \gamma(x-ct)\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$x= \gamma(x' + vt')$}\\
+$x-vt' = x' \implies x = x' + v t' \implies x = \gamma(x' + vt')$ (see diagram)\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\gamma= \frac{1}{\sqrt{1-v^2/c^2}}$}\\
+$x=ct;\,\,x'=ct'\\
+x'= \gamma(x-vt) \implies ct' = \gamma(ct-vt) = \gamma t(c-v)\\
+x=\gamma(x' + vt') \implies ct = \gamma(ct' + vt') = \gamma t'(c+v)\\
+\implies t' = \frac{\gamma t}{c} (c-v);\,\, ct = \gamma t' (c+v) = \gamma(c+v) \frac{\gamma t}{c} (c-v)\\
+\implies \frac{c^2}{c^2-v^2} = \gamma^2 = \frac{1}{1-\frac{v^2}{c^2}}\\
+\therefore \gamma = \frac{1}{\sqrt{1-v^2/c^2}}$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\lambda_- = \sqrt{\frac{1 + v_s/c}{1-v_s/c}} \lambda_0$ (receding)$;\,\, \lambda_+ = \sqrt{\frac{1-v_s/c}{1+v_s/c}} \lambda_0$ (approaching source)}\\
+$\lambda = c \Delta t - v \Delta t,\,\, \Delta t_0 =$ time between consecutive crests where source velocity is $0$\\
+$\Delta =$ time between consecutive crests in frame where\\
+$v_s \neq 0\\$
+\underline{recall:} $\Delta t = \gamma \Delta \tau\\
+\implies \Delta t= \Delta t_0 \gamma = \frac{1}{\sqrt{1- \frac{v^2}{c^2}}} \Delta t_0\\
+\Delta t_0 = \frac{1}{f_0} = \frac{1}{c/\lambda_0} = \frac{\lambda_0}{c}\\
+\lambda= (c-v) \Delta t = \frac{(c-v) \Delta t_0}{\sqrt{1- \frac{v^2}{c^2}}} = \frac{(c-v) \lambda_0}{\sqrt{c^2-v^2}}\\
+= \lambda_0 \frac{(c-v)}{\sqrt{c-v} \sqrt{c+v}} = \lambda_0 \sqrt{\frac{c-v}{c+v} = \sqrt{\frac{1-v/c}{1+v/c}}} \lambda_0\\
+\therefore \lambda_+ = \sqrt{\frac{1-v/c}{1+v/c}} \lambda_0$
+
+
+
+
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
